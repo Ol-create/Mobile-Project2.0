@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    height: 55px;
+    width: 375px;
+    background-color: #3c3a39;
+  }
+  
+  #bars {
+    margin-top: 15px;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 20px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: white;
+    margin-right: 20px;
+  }
+  
+  #profileName {
+    color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+  }
+ 
+  
