@@ -1,104 +1,144 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #navbar {
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0;
-    height: 55px;
-    width: 375px;
-    background-color: #3c3a39;
-  }
-  
-  #bars {
-    margin-top: 15px;
-  }
-  
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 20px;
-    height: 3px;
-    margin: 3px 0;
-    background-color: white;
-    margin-right: 20px;
-  }
-  
-  #profileName {
-    color: white;
-    margin-left: 20px;
-    margin-top: 15px;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-  }
-  #greetText {
-    position: static;
-    width: 327px;
-    height: 124px;
-    left: 24px;
-    top: 110px;
-    font-family: "Crete Round", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 50px;
-    letter-spacing: 0.37px;
-    color: #ff6b00;
-  }
-  
-  #container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 120px 24px;
-    position: absolute;
-    width: 375px;
-    height: 590px;
-    letter-spacing: 0;
-    top: 55px;
-    background: #1c1a19;
-    overflow: hidden;
-  }
-  #jobTitle {
-    position: static;
-    width: 327px;
-    height: 27px;
-    left: 24px;
-    top: 256px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    color: #fff5e1;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 12px 0;
-  }
-  
-  #description {
-    position: static;
-    width: 327px;
-    height: 123px;
-    left: 24px;
-    top: 340px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fff;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 12px 0;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  height: 55px;
+  width: 375px;
+  background-color: #3c3a39;
+}
+
+#bars {
+  margin-top: 15px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 20px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: white;
+  margin-right: 20px;
+}
+
+#profileName a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  margin-top: 15px;
+  text-align: center;
+  /* margin-bottom: 20px; */
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+
+
+#greetText {
+  position: static;
+  width: 327px;
+  height: 124px;
+  left: 24px;
+  top: 110px;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.5em;
+  line-height: 50px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  position: absolute;
+  width: 375px;
+  height: 590px;
+  letter-spacing: 0;
+  top: 55px;
+  background: #1c1a19;
+  overflow: hidden;
+}
+
+#jobTitle {
+  position: static;
+  width: 327px;
+  height: 27px;
+  left: 24px;
+  top: 256px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+#description {
+  position: static;
+  width: 327px;
+  height: 123px;
+  left: 24px;
+  top: 340px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.icon {
+  position: absolute;
+  width: 200px;
+  height: 27px;
+  left: 30px;
+  top: 415px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+.fa {
+  color: #dbd8d7;
+}
+
+/* Style background image of first page */
+
+#first-bg-image {
+  background-image: url(./image/backgroung-image-page1.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 406.89px;
+  height: 312.03px;
+  left: 230px;
+  top: 250px;
+}
+
+
