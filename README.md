@@ -18,7 +18,7 @@ A mobile version of my portfolio
 
 - GitHub: [@githubhandle](https://www.linkedin.com/in/paul-oluyemi-193966ab)
 - Twitter: [@twitterhandle](https://twitter.com/OluyemiPaul99)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/paul-oluyemi-193966ab)
 
 ## 🤝 Contributing
 

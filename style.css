@@ -29,6 +29,12 @@
   margin-right: 20px;
 }
 
+.content_1 ul li a {
+  display: block;
+  color: #fff;
+  background: #777;
+}
+
 #profileName a {
   display: block;
   text-decoration: none;
@@ -186,7 +192,7 @@ hr {
   left: 10px;
 }
 
-#project-row1 {
+.project-row1 {
   position: relative;
   top: 170px;
 }
@@ -229,15 +235,6 @@ hr {
   border: 1px solid #8993a4;
 }
 
-#project-row1 .html,
-#project-row1 .bootstrap,
-#project-row1 .ruby,
-#project-row1 .css {
-  background-color: #fff;
-  color: #091e42;
-  opacity: 1;
-}
-
 /* style css link */
 .css {
   width: 50px;
@@ -275,10 +272,13 @@ hr {
   justify-content: space-between;
 }
 
-.content_1 ul li a {
-  display: block;
-  color: #fff;
-  background: #777;
+.project-row1 .html,
+.project-row1 .bootstrap,
+.project-row1 .ruby,
+.project-row1 .css {
+  background-color: #fff;
+  color: #091e42;
+  opacity: 1;
 }
 
 .content_1 .project-link {
