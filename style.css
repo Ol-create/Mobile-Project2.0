@@ -141,14 +141,14 @@ ul {
 /* style work section */
 
 .work-section-grid {
-  height: 3450px;
+  height: 3400px;
   width: 375px;
   position: absolute;
   top: 640px;
   left: 0;
   display: grid;
   grid-template-columns: 375px;
-  grid-template-rows: 785px repeat(6, 410px);
+  grid-template-rows: 620px repeat(6, 410px);
   padding: 120px 24px 120px 24px;
   background-color: #eee;
 }
@@ -229,9 +229,9 @@ hr {
   border: 1px solid #8993a4;
 }
 
-#project-row1 .html,
-.bootstrap,
-.ruby,
+#project-row1 .html, 
+#project-row1 .bootstrap, #project-row1
+.ruby, #project-row1
 .css {
   background-color: #ffffff;
   color: #091E42;
@@ -370,4 +370,143 @@ hr {
   letter-spacing: 0.03em;
   color: #fff;
   padding-left: 110px;
+}
+
+/* About-me Section */
+.about_me_grid {
+  height: 1800px;
+  width: 375px;
+  position: absolute;
+  top: 4000px;
+  left: 0;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 1400px;
+  padding-top: 50px;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* about_img */
+.about_me {
+  width: 375px;
+  height: 1400px;
+  padding-left: 24px;
+}
+
+#about_img {
+  position: absolute;
+  width: 480px;
+  height: 200px;
+  left: 150px;
+  top: 500px;
+}
+
+#about-title {
+  position: relative;
+  width: 327px;
+  height: 56px;
+  left: 10px;
+  top: 75px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.get-my-resume {
+  width: 200px;
+  height: 45px;
+  position: relative;
+  top: 150px;
+  left: 10px;
+  padding: 10px;
+  background: #ff6b00;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+#about-text {
+  position: relative;
+  width: 289px;
+  height: 148px;
+  left: 10px;
+  top: 110px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+#about-hr {
+  width: 320px;
+  height: 0;
+  color: white;
+  position: absolute;
+  top: 720px;
+  left: 24px;
+}
+
+.lang-img-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.list_lang {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  width: 375px;
+  height: 900px;
+  left: 120px;
+  top: 790px;
+}
+
+.list_lang li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 25;
+  font-size: 22px;
+  line-height: 50px;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+}
+
+.form_section {
+  background-color: #eee;
+}
+
+.li-first-child {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  height: 60px;
+}
+
+.css:hover,
+.html:hover,
+.bootstrap:hover,
+.ruby:hover {
+  background-color: #ddd;
+}
+
+.css:visited,
+.html:visited,
+.bootstrap:visited,
+.ruby:visited {
+  background-color: #999;
 }
