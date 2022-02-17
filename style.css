@@ -29,6 +29,12 @@
   margin-right: 20px;
 }
 
+.content_1 ul li a {
+  display: block;
+  color: #fff;
+  background: #777;
+}
+
 #profileName a {
   display: block;
   text-decoration: none;
@@ -136,4 +142,384 @@ ul {
   height: 312.03px;
   left: 230px;
   top: 250px;
+}
+
+/* style work section */
+
+.work-section-grid {
+  height: 3400px;
+  width: 375px;
+  position: absolute;
+  top: 640px;
+  left: 0;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 620px repeat(6, 410px);
+  padding: 120px 24px 120px 24px;
+  background-color: #eee;
+}
+
+.img01 {
+  width: 327px;
+  height: 237px;
+  background-image: url(./image/img_01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 200px;
+}
+
+.recent-work {
+  margin-top: 90px;
+}
+
+#topic {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+hr {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+.project-row1 {
+  position: relative;
+  top: 170px;
+}
+
+#story {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 10px;
+}
+
+#story-text {
+  width: 327px;
+  height: 147px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin-top: 10px;
+}
+
+/* style the lang links */
+
+.html,
+.bootstrap,
+.ruby,
+.css {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+/* style css link */
+.css {
+  width: 50px;
+  height: 40px;
+}
+
+/* html link */
+.html {
+  width: 56px;
+  height: 40px;
+}
+
+/* bootstrap link */
+
+.bootstrap {
+  width: 95px;
+  height: 40px;
+}
+
+/* ruby */
+
+.ruby {
+  width: 61px;
+  height: 40px;
+}
+
+.project-link {
+  width: 280px;
+  height: 56px;
+  position: relative;
+  top: -10px;
+  margin-left: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-row1 .html,
+.project-row1 .bootstrap,
+.project-row1 .ruby,
+.project-row1 .css {
+  background-color: #fff;
+  color: #091e42;
+  opacity: 1;
+}
+
+.content_1 .project-link {
+  width: 250px;
+  top: 120px;
+  left: 14px;
+}
+
+.content-flex {
+  width: 357px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img04 {
+  height: 386px;
+  width: 327px;
+  background-image: url(./image/img_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.goto_project {
+  position: absolute;
+  top: 255px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  align-items: center;
+  padding: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* style content text and see project button */
+
+.title-post {
+  position: relative;
+  top: 80px;
+  height: 81px;
+  width: 295px;
+  left: 16px;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+.supporting-text {
+  position: relative;
+  top: 95px;
+  height: 87px;
+  width: 250px;
+  left: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+.content_1 .goto_project {
+  width: 327px;
+  position: relative;
+  top: 140px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding-left: 110px;
+}
+
+/* About-me Section */
+.about_me_grid {
+  height: 1800px;
+  width: 375px;
+  position: absolute;
+  top: 4000px;
+  left: 0;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 1400px;
+  padding-top: 50px;
+  background-color: #1c1a19;
+  overflow: hidden;
+}
+
+/* about_img */
+.about_me {
+  width: 375px;
+  height: 1400px;
+  padding-left: 24px;
+}
+
+#about_img {
+  position: absolute;
+  width: 480px;
+  height: 200px;
+  left: 150px;
+  top: 500px;
+}
+
+#about-title {
+  position: relative;
+  width: 327px;
+  height: 56px;
+  left: 10px;
+  top: 75px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.get-my-resume {
+  width: 200px;
+  height: 45px;
+  position: relative;
+  top: 150px;
+  left: 10px;
+  padding: 10px;
+  background: #ff6b00;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+#about-text {
+  position: relative;
+  width: 289px;
+  height: 148px;
+  left: 10px;
+  top: 110px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+#about-hr {
+  width: 320px;
+  height: 0;
+  color: white;
+  position: absolute;
+  top: 720px;
+  left: 24px;
+}
+
+.lang-img-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.list_lang {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  width: 375px;
+  height: 900px;
+  left: 120px;
+  top: 790px;
+}
+
+.list_lang li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 25;
+  font-size: 22px;
+  line-height: 50px;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+}
+
+.form_section {
+  background-color: #eee;
+}
+
+.li-first-child {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  height: 60px;
+}
+
+/* Create Button Interactions */
+
+/* on hover */
+.goto_project:hover,
+.get-my-resume:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+  color: #f55800;
+}
+
+/* on hover display disable-feacture */
+.css:hover,
+.html:hover,
+.bootstrap:hover,
+.ruby:hover {
+  opacity: 0.6;
+  cursor: not-allowed;
+  border: 1px solid rgb(26, 115, 204);
+}
+
+/* on button press */
+.goto_project:active,
+.get-my-resume:active {
+  background-color: #2d627a;
 }
