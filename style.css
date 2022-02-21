@@ -524,7 +524,22 @@ hr {
   background-color: #2d627a;
 }
 
-/* Intrest text */
+/* style contact form */
+
+.contact-form-grid {
+  height: 900px;
+  width: 375px;
+  position: relative;
+  top: 5800px;
+  left: 0;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 930px;
+  padding: 100px 24px;
+  background-color: #E5E5E5;
+  overflow: hidden;
+}
+
 #intrest-text{
   width: 320px;
   height: 216px;
@@ -540,17 +555,49 @@ hr {
   color: #172B4D;
 }
 
-/* style contact form */
-.contact-form-grid {
-  height: 900px;
+.flex {
   width: 375px;
-  position: relative;
-  top: 5800px;
+  height: 430px;
+  padding: 20px 24px;
+  position: absolute;
+  top: 360px;
   left: 0;
-  display: grid;
-  grid-template-columns: 375px;
-  grid-template-rows: 930px;
-  padding: 50px 24px;
-  background-color: #E5E5E5;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-family: 'Inter', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #979493;
+}
+
+input {
+  height: 50px;
+  width: 327px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #979493;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color:#172B4D;
+  margin: 15px 0;
+}
+
+textarea {
+  color: #2c2c2c;
+  background: #f5e9e4;
+  margin-top: 20px;
+  height: 150px;
+  width: 327px;
+  border-radius: 0px;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
 }
