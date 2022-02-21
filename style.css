@@ -523,3 +523,34 @@ hr {
 .get-my-resume:active {
   background-color: #2d627a;
 }
+
+/* Intrest text */
+#intrest-text{
+  width: 320px;
+  height: 216px;
+  position: static;
+  left: 0px;
+  top: 0px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
+}
+
+/* style contact form */
+.contact-form-grid {
+  height: 900px;
+  width: 375px;
+  position: relative;
+  top: 5800px;
+  left: 0;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 930px;
+  padding: 50px 24px;
+  background-color: #E5E5E5;
+  overflow: hidden;
+}
