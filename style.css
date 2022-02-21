@@ -591,6 +591,24 @@ input {
   margin: 15px 0;
 }
 
+button[type=submit] {
+  position: static;
+width: 131px;
+height: 48px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.03em;
+background: #FF6B00;
+color: #FFFFFF;
+border: none;
+margin: 24px 50%;
+transform: translateX(-50%);
+}
+
 textarea {
   color: #2c2c2c;
   background: #f5e9e4;
