@@ -501,7 +501,8 @@ hr {
 
 /* on hover */
 .goto_project:hover,
-.get-my-resume:hover {
+.get-my-resume:hover,
+.button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
@@ -520,14 +521,15 @@ hr {
 
 /* on button press */
 .goto_project:active,
-.get-my-resume:active {
+.get-my-resume:active,
+.button:active {
   background-color: #2d627a;
 }
 
 /* style contact form */
 
 .contact-form-grid {
-  height: 900px;
+  height: 1000px;
   width: 375px;
   position: relative;
   top: 5800px;
@@ -536,23 +538,23 @@ hr {
   grid-template-columns: 375px;
   grid-template-rows: 930px;
   padding: 100px 24px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   overflow: hidden;
 }
 
-#intrest-text{
+#intrest-text {
   width: 320px;
   height: 216px;
   position: static;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .flex {
@@ -569,13 +571,13 @@ hr {
 
 label {
   font-family: 'Inter', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-color: #979493;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #979493;
 }
 
 input {
@@ -587,26 +589,27 @@ input {
   border-bottom: 1px solid #979493;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
-  color:#172B4D;
+  color: #172b4d;
   margin: 15px 0;
 }
 
 button[type=submit] {
   position: static;
-width: 131px;
-height: 48px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 24px;
-text-align: center;
-letter-spacing: 0.03em;
-background: #FF6B00;
-color: #FFFFFF;
-border: none;
-margin: 24px 50%;
-transform: translateX(-50%);
+  width: 131px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  margin: 24px 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
 
 textarea {
@@ -615,7 +618,41 @@ textarea {
   margin-top: 20px;
   height: 150px;
   width: 327px;
-  border-radius: 0px;
+  border-radius: 0;
   font-size: 18px;
   font-family: 'Inter', sans-serif;
+}
+
+#footer-ruler {
+  position: absolute;
+  top: 870px;
+  left: 0;
+  width: 375px;
+  height: 2px;
+  color: black;
+}
+
+#foot-social-icons {
+  position: absolute;
+  top: 900px;
+  padding-left: 90px;
+  width: 300px;
+  height: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#foot-social-icons img {
+  width: 23px;
+  height: 23px;
+}
+
+#footer-bar {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 20px;
+  background: #0d151e;
+  border-radius: 10px;
 }
