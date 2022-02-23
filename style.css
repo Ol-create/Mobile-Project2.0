@@ -528,15 +528,15 @@ hr {
 
 /* style contact form */
 
-.contact-form-grid {
+.contact-form-flex {
   height: 1000px;
   width: 375px;
   position: relative;
   top: 5800px;
   left: 0;
-  display: grid;
-  grid-template-columns: 375px;
-  grid-template-rows: 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 100px 24px;
   background-color: #e5e5e5;
   overflow: hidden;
@@ -545,9 +545,8 @@ hr {
 #intrest-text {
   width: 320px;
   height: 216px;
-  position: static;
-  left: 0;
-  top: 0;
+  position: absolute;
+  top: 80px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
