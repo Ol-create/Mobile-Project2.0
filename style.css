@@ -620,6 +620,7 @@ textarea {
   border-radius: 0;
   font-size: 18px;
   font-family: 'Inter', sans-serif;
+  padding: 8px;
 }
 
 #footer-ruler {
