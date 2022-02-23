@@ -501,7 +501,8 @@ hr {
 
 /* on hover */
 .goto_project:hover,
-.get-my-resume:hover {
+.get-my-resume:hover,
+.button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
@@ -520,6 +521,138 @@ hr {
 
 /* on button press */
 .goto_project:active,
-.get-my-resume:active {
+.get-my-resume:active,
+.button:active {
   background-color: #2d627a;
+}
+
+/* style contact form */
+
+.contact-form-flex {
+  height: 1000px;
+  width: 375px;
+  position: relative;
+  top: 5800px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 24px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+
+#intrest-text {
+  width: 320px;
+  height: 216px;
+  position: absolute;
+  top: 80px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.flex {
+  width: 375px;
+  height: 430px;
+  padding: 20px 24px;
+  position: absolute;
+  top: 360px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #979493;
+}
+
+input {
+  height: 50px;
+  width: 327px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #979493;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #172b4d;
+  margin: 15px 0;
+}
+
+button[type=submit] {
+  position: static;
+  width: 131px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  margin: 24px 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+textarea {
+  color: #2c2c2c;
+  background: #f5e9e4;
+  margin-top: 20px;
+  height: 150px;
+  width: 327px;
+  border-radius: 0;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  padding: 8px;
+}
+
+#footer-ruler {
+  position: absolute;
+  top: 870px;
+  left: 0;
+  width: 375px;
+  height: 2px;
+  color: black;
+}
+
+#foot-social-icons {
+  position: absolute;
+  top: 900px;
+  padding-left: 90px;
+  width: 300px;
+  height: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#foot-social-icons img {
+  width: 23px;
+  height: 23px;
+}
+
+#footer-bar {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 20px;
+  background: #0d151e;
+  border-radius: 10px;
 }
