@@ -16,11 +16,18 @@
 </head>
 
 <body>
-    <header>
+<div class="big-grid-container">
+    <header class="flex-a">
         <nav id="navbar">
             <div id="profileName">
-                <p><a> Paul, Oluyemi</a></p>
+                <p><a href="#"> Paul, Oluyemi</a></p>
             </div>
+            <ul id="desktop-nav">
+                <a href="#"><li>Portfolio</li></a>
+                <a href="#"><li>About </li></a>
+                <a href="#"><li> Contact</li></a>
+                <a href="#"><li> <i class="far fa-envelope"></i></li></a>  
+            </ul>
             <div id="bars">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -28,7 +35,8 @@
             </div>
         </nav>
     </header>
-    <main id="container">
+  
+    <main id="container" class="flex-b">
         <section>
             <h1 id="greetText">Hey There.<br>
                 I'm Oluyemi</h1>
@@ -47,18 +55,17 @@
             <li><a href="#"><i class="fa fa-angellist fa-lg"></i> </a></li>
         </ul>
         <div id="first-bg-image">
-
-        </div>
+    </div>
     </main>
+
     <!-- Project/works Section -->
-    <section class="work-section-grid">
-        <div class="recent-work content-flex">
+        <div class="content-flex flex-c">
             <div id="topic">
                 <h2>My Recent Works</h2>
                 <hr>
             </div>
-            <div class="img01"> </div>
-            <div class="project-row1">
+            <div class="img01 flex-c1"> </div>
+            <div class="project-row1 flex-c2">
                 <h2 id="story">Multi-Post Stories</h2>
                 <p id="story-text">A daily selection of privately personalized
                     reads; no accounts or sign-ups required. has
@@ -74,6 +81,10 @@
                 <a class="goto_project " href="#">See Project</a>
             </div>
         </div>
+
+
+
+<div class="flex-d">
 
         <div class="content_1 content-flex ">
             <div class="img04">
@@ -120,6 +131,10 @@
             </div>
         </div>
 
+</div>
+
+
+<div class="flex-e">
         <div class="content_1 content-flex">
             <div class="img04">
                 <h3 class="title-post">Profesional Art Printing Data More</h3>
@@ -164,11 +179,13 @@
                 <a class="goto_project" href="#">See Project</a>
             </div>
         </div>
-    </section>
+</div>
+
     <!-- About-me Section -->
 
-    <section class="about_me_grid">
-        <div class="about_me">
+    <section class="about_me_grid flex-f">
+
+<div class="flex-f1">
             <img id="about_img" width="586" height="354" src="./image/about-img-bg.png" alt="">
             <h2 id="about-title">About me</h2>
             <P id="about-text">Hello I’m a software developer! I can help you build a product ,
@@ -178,7 +195,11 @@
             <a class="get-my-resume" href="#">Get My Resume</a>
 
             <hr id="about-hr">
-            <div class="list_lang">
+
+</div>
+
+
+ <div class="list_lang flex-f2">
                 <ul>
                     <li class="li-first-child"><span><img class="lang-img-icon" src="./image/diamond.png" alt=""></span>
                         Language</li>
@@ -207,14 +228,16 @@
                     <li>Gitlab</li>
                     <li>Terminal</li>
                 </ul>
-            </div>
-        </div>
+</div>
+
     </section>
-    <section class="contact-form-flex">
+
+
+    <section class="flex-g">
 
         <h4 id="intrest-text">I'm always interested in hearing about new projects,
             so if you'd like to chat please get in touch.</h4>
-        <form action="https://formspree.io/f/mknyregg" method="post">
+        <form action="https://formspree.io/f/mknyregg" method="post" class="flex-g1">
             <div class="flex">
                 <input type="text" class="input-text" id="name" name="client_name" maxlength="30"
                     placeholder="Full name" required>
@@ -226,6 +249,9 @@
             </div>
         </form>
         <hr id="footer-ruler">
+
+     </div>
+
         <div id="foot-social-icons" class="flex">
             <a rel="noreferrer noopener" href="https://github.com/Ol-create" target="_blank"><img
                     src="./social_icons/github.svg" alt=""></a>

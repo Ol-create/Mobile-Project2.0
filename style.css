@@ -2,16 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Re-engineering my design */
+.big-grid-container {
+  height: 6250px;
+  min-width:375px;
+  position: relative;
+  top: 0;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 92px 600px 830px 1400px 1400px 1250px 1800px 1000px;
+  padding: 120px 24px 120px 24px;
+  justify-content: center;
 }
 
 #navbar {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   margin-left: 0;
-  height: 55px;
-  width: 375px;
+  height: 3.4375em;
+  width: 100%;
   background-color: #3c3a39;
 }
 
@@ -62,16 +82,18 @@
   color: #ff6b00;
 }
 
-#container {
+.flex-b {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   padding: 120px 24px;
   position: absolute;
-  width: 375px;
+  width: 100%;
+  margin-right: 0px;
   height: 590px;
   letter-spacing: 0;
   top: 55px;
+  left: 0px;
   background: #1c1a19;
   overflow: hidden;
 }
@@ -144,34 +166,62 @@ ul {
   top: 250px;
 }
 
-/* style work section */
-
-.work-section-grid {
-  height: 3400px;
-  width: 375px;
+.flex-c {
+  display: flex;
   position: absolute;
-  top: 640px;
-  left: 0;
-  display: grid;
-  grid-template-columns: 375px;
-  grid-template-rows: 620px repeat(6, 410px);
-  padding: 120px 24px 120px 24px;
-  background-color: #eee;
+  top: 692px;
+  height: 830px;
+  padding-left: 24px;
+
 }
 
+.flex-d {
+  position: absolute;
+  top: 1420px;
+  height: 1400px;
+}
+
+.flex-e {
+  position: absolute;
+  top: 2660px;
+  height: 1250px;
+}
+.flex-f {
+  position: absolute;
+  height: 1800px;
+  min-width: 100%;
+  position: absolute;
+  top: 3902px;
+  left: 0;
+  display: flex;
+  padding-top: 50px;
+  background-color: #1c1a19;
+  overflow: hidden;
+}
+
+.flex-g {
+    height: 1000px;
+    width: 375px;
+    position: absolute;
+    top: 5700px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 24px;
+    background-color: #e5e5e5;
+    overflow: hidden;
+}
 .img01 {
-  width: 327px;
-  height: 237px;
+  width: 320px;
+  height: 225px;
   background-image: url(./image/img_01.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 315px auto;
   position: absolute;
   top: 200px;
-}
-
-.recent-work {
-  margin-top: 90px;
+  left: 24px;
 }
 
 #topic {
@@ -194,7 +244,7 @@ hr {
 
 .project-row1 {
   position: relative;
-  top: 170px;
+  top: 345px;
 }
 
 #story {
@@ -216,6 +266,7 @@ hr {
   line-height: 24px;
   color: #091e42;
   margin-top: 10px;
+  padding-right: 24px;
 }
 
 /* style the lang links */
@@ -265,7 +316,7 @@ hr {
   width: 280px;
   height: 56px;
   position: relative;
-  top: -10px;
+  top: 15px;
   margin-left: 4px;
   display: flex;
   flex-direction: row;
@@ -297,7 +348,7 @@ hr {
 
 .img04 {
   height: 386px;
-  width: 327px;
+  min-width: 327px;
   background-image: url(./image/img_4.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -306,8 +357,8 @@ hr {
 
 .goto_project {
   position: absolute;
-  top: 255px;
-  width: 124px;
+  top: 270px;
+  min-width: 124px;
   height: 48px;
   background: #ff6b00;
   align-items: center;
@@ -327,7 +378,7 @@ hr {
   position: relative;
   top: 80px;
   height: 81px;
-  width: 295px;
+  min-width: 295px;
   left: 16px;
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
@@ -343,7 +394,7 @@ hr {
   position: relative;
   top: 95px;
   height: 87px;
-  width: 250px;
+  min-width: 250px;
   left: 16px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -356,7 +407,7 @@ hr {
 }
 
 .content_1 .goto_project {
-  width: 327px;
+  min-width: 327px;
   position: relative;
   top: 140px;
   font-family: 'Inter', sans-serif;
@@ -370,21 +421,6 @@ hr {
   letter-spacing: 0.03em;
   color: #fff;
   padding-left: 110px;
-}
-
-/* About-me Section */
-.about_me_grid {
-  height: 1800px;
-  width: 375px;
-  position: absolute;
-  top: 4000px;
-  left: 0;
-  display: grid;
-  grid-template-columns: 375px;
-  grid-template-rows: 1400px;
-  padding-top: 50px;
-  background-color: #1c1a19;
-  overflow: hidden;
 }
 
 /* about_img */
@@ -528,20 +564,6 @@ hr {
 
 /* style contact form */
 
-.contact-form-flex {
-  height: 1000px;
-  width: 375px;
-  position: relative;
-  top: 5800px;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 100px 24px;
-  background-color: #e5e5e5;
-  overflow: hidden;
-}
-
 #intrest-text {
   width: 320px;
   height: 216px;
@@ -566,17 +588,6 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
-  color: #979493;
 }
 
 input {
@@ -625,7 +636,7 @@ textarea {
 
 #footer-ruler {
   position: absolute;
-  top: 870px;
+  top: 900px;
   left: 0;
   width: 375px;
   height: 2px;
@@ -633,9 +644,9 @@ textarea {
 }
 
 #foot-social-icons {
-  position: absolute;
-  top: 900px;
-  padding-left: 90px;
+  position: relative;
+  bottom: 90px;
+  padding-left: 50px;
   width: 300px;
   height: 30px;
   flex-direction: row;
@@ -648,11 +659,28 @@ textarea {
 }
 
 #footer-bar {
-  position: absolute;
+  position: relative;
   width: 134px;
   height: 5px;
   left: calc(50% - 134px / 2 - 0.5px);
-  bottom: 20px;
+  top: 380px;
   background: #0d151e;
   border-radius: 10px;
+}
+/* Hidden feature on smaller screen */
+#desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 53.125em){
+  html { font-size: calc( 20px + (72 - 20) * (100vw - 850px) / (1400 - 850) ); }
+
+  body {
+    width: 100%;
+  };
+
+  nav {
+    min-width: 100%;
+    /* height: 75px; */
+  }
 }
