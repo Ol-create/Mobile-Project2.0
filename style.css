@@ -12,11 +12,11 @@ html {
 /* Re-engineering my design */
 .big-grid-container {
   height: 6250px;
-  min-width:375px;
+  min-width:100%;
   position: relative;
   top: 0;
   display: grid;
-  grid-template-columns: 375px;
+  grid-template-columns: 100%;
   grid-template-rows: 92px 600px 830px 1400px 1400px 1250px 1800px 1000px;
   padding: 120px 24px 120px 24px;
   justify-content: center;
@@ -67,8 +67,7 @@ html {
   font-weight: bolder;
 }
 
-#greetText {
-  position: static;
+.greetText {
   width: 327px;
   height: 124px;
   left: 24px;
@@ -76,7 +75,7 @@ html {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 3.5em;
+  font-size: 30px;
   line-height: 50px;
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -98,7 +97,7 @@ html {
   overflow: hidden;
 }
 
-#jobTitle {
+.jobTitle {
   position: static;
   width: 327px;
   height: 27px;
@@ -156,7 +155,7 @@ ul {
 
 /* Style background image of first page */
 
-#first-bg-image {
+.first-bg-image {
   background-image: url(./image/backgroung-image-page1.svg);
   background-repeat: no-repeat;
   position: absolute;
@@ -171,6 +170,7 @@ ul {
   position: absolute;
   top: 692px;
   height: 830px;
+  width: 100%;
   padding-left: 24px;
 
 }
@@ -179,12 +179,14 @@ ul {
   position: absolute;
   top: 1420px;
   height: 1400px;
+  width: 100%;
 }
 
 .flex-e {
   position: absolute;
   top: 2660px;
   height: 1250px;
+  width: 100%;
 }
 .flex-f {
   position: absolute;
@@ -201,7 +203,7 @@ ul {
 
 .flex-g {
     height: 1000px;
-    width: 375px;
+    width: 100%;
     position: absolute;
     top: 5700px;
     left: 0;
@@ -672,15 +674,43 @@ textarea {
   display: none;
 }
 
-@media screen and (min-width: 53.125em){
-  html { font-size: calc( 20px + (72 - 20) * (100vw - 850px) / (1400 - 850) ); }
-
+@media(min-width:992px){
   body {
     width: 100%;
+  }
+
+  .big-grid-container {
+    height: 6250px;
+    min-width:100%;
+    position: relative;
+  }
+
+  /* Hide bg- */
+  .first-bg-image {
+    display: none;
+  }
+
+  .greetText {
+  padding-left: 100px;
+position: static;
+width: 566px;
+height: 160px;
+left: 0px;
+top: 192px;
+font-size: 72px;
+line-height: 81px;
   };
 
-  nav {
-    min-width: 100%;
-    /* height: 75px; */
+  .jobTitle {
+ position: relative;
+width: 566px;
+height: 200px;
+left: 100px;
+top: 376px;
+font-weight: 500;
+font-size: 32px;
+line-height: 44px;
+align-items: center;
+background-color: red;
   }
 }
