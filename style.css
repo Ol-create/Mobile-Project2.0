@@ -774,8 +774,21 @@ hr {
 
 .project-row1 {
   position: relative;
-  top: 345px;
+  top: 200px;
+  left: 460px;
 }
 
+.flex-d {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+}
 
+.flex-e {
+  position: relative;
+  top: 1700px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24 30px 0 24px;
+}
 }
