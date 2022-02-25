@@ -5,6 +5,8 @@
 
 }
 
+  
+
 html {
   font-size: 16px;
 }
@@ -84,7 +86,6 @@ html {
 .flex-b {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   padding: 120px 24px;
   position: absolute;
   width: 100%;
@@ -674,6 +675,7 @@ textarea {
   display: none;
 }
 
+
 @media(min-width:992px){
   body {
     width: 100%;
@@ -690,27 +692,90 @@ textarea {
     display: none;
   }
 
-  .greetText {
-  padding-left: 100px;
+.first-page {
+  padding: 50px 0 0 143px; 
+}
+
+.greetText {
 position: static;
 width: 566px;
-height: 160px;
+/* height: 160px; */
 left: 0px;
-top: 192px;
+/* top: 192px; */
 font-size: 72px;
 line-height: 81px;
-  };
+  }
 
-  .jobTitle {
- position: relative;
+ 
+.jobTitle {
+    display: flex;
+    padding: 70px 0 20px 0;
 width: 566px;
-height: 200px;
-left: 100px;
-top: 376px;
 font-weight: 500;
 font-size: 32px;
 line-height: 44px;
 align-items: center;
-background-color: red;
   }
+
+  .icon {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    padding-left: 20px;
+    position: absolute;
+    top: 200px;
+  };
+.flex-c {
+  width: 1200px;
+}
+  
+.flex-row {
+  display: flex;
+  width: 900px;
+  height: 410px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+#topic {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+hr {
+  position: relative;
+  top: -26px;
+  left: 310px;
+  width: 700px;
+}
+.img01 {
+  width: 684px;
+  height: 448px;
+  background-image: url(./image/img_01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 684px auto;
+  position: absolute;
+  top: 200px;
+  left: 24px;
+}
+
+
+.project-row1 {
+  position: relative;
+  top: 345px;
+}
+
+
 }
