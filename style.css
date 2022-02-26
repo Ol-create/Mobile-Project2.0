@@ -682,19 +682,6 @@ textarea {
     background-color: #ddd;
   }
 
-  /* .big-grid-container {
-    height: 6250px;
-    min-width:100%;
-    position: relative;
-    top: 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 92px 600px 830px 1400px 1400px 1250px 1800px 1000px;
-    padding: 120px 24px 120px 24px;
-    justify-content: center;
-  } */
-  
-
   .big-grid-container {
     height: 4650px;
     min-width:1500;
@@ -706,6 +693,16 @@ textarea {
   /* Hide bg- */
   .first-bg-image {
     display: none;
+  }
+
+  #img-first{
+    background-image: url(./image/first_img.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1003px;
+    height: 769px;
+    left: 685px;
+    top: 0;
   }
 
 .first-page {
