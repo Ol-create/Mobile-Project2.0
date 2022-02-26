@@ -720,15 +720,24 @@ line-height: 81px;
   }
 
  
-.jobTitle {
+  .jobTitle {
+    height: 55px;
     display: flex;
     padding: 70px 0 20px 0;
-width: 566px;
-font-weight: 500;
-font-size: 32px;
-line-height: 44px;
-align-items: center;
+    width: 566px;
+    font-weight: 500;
+    font-size: 35px;
+    font-family: inherit;
+    line-height: 44px;
+    align-items: center;
   }
+
+  #description {
+    width: 500px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
 
   .icon {
     float: left;
@@ -796,13 +805,28 @@ hr {
   justify-content: space-between;
   padding: 0 30px 0 30px;
 }
-
 .flex-e {
+  width: 1250px;
+  /* left: 140px; */
   position: relative;
   top: 1700px;
   display: flex;
   justify-content: space-between;
-  padding: 24 30px 0 24px;
+  padding: 24 80px 0 80px;
+  left: 130px;
+}
+
+@media (max-width:1200px){
+  .flex-e {
+   
+  width: 1110px;
+  position: relative;
+  top: 1700px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24 80px 0 80px;
+  left: 200px;
+  }
 }
 
 .flex-f {
@@ -836,12 +860,12 @@ hr {
   position: absolute;
   width: 672px;
   height: 352px;
-  left: 650px;
+  left: 850px;
   top: 150px;
 }
 
 #about-hr {
-  width: 1000px;
+  width: 1200px;
   top: 630px;
   left: 150px;
 }
@@ -851,6 +875,7 @@ hr {
   width: 566px;
   height: 78px;
   top: 75px;
+  left: 150px;
   font-size: 72px;
   line-height: 82px;
 }
@@ -859,11 +884,16 @@ hr {
   position: relative;
   width: 566px;
   height: 148px;
-  left: 10px;
+  left: 150px;
   top: 110px;
   font-size: 20px;
   line-height: 32px;
 }
+
+.get-my-resume {
+  left: 150px;
+}
+
 
 /* Contact Form Section */
 .flex-g {
