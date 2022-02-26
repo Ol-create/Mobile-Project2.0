@@ -696,7 +696,7 @@ textarea {
   
 
   .big-grid-container {
-    height: 6250px;
+    height: 4650px;
     min-width:1500;
     position: relative;
     grid-template-columns: 1500px;
@@ -811,7 +811,7 @@ hr {
 .flex-f {
   height: 1400px;
 }
-
+/* About me Section */
 .about_me_grid {
   position: relative;
   top: 1600px;
@@ -867,4 +867,61 @@ hr {
   font-size: 20px;
   line-height: 32px;
 }
+
+/* Contact Form Section */
+.flex-g {
+  height: 850px;
+  top: 3800px;
+  left: 0;
+  justify-content: center;
+}
+
+.flex {
+  width: 375px;
+  height: 430px;
+  top: 105px;
+  left: 550px;
+}
+
+#intrest-text {
+  width: 455px;
+  height: 256px;
+  top: 120px;
+  left: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+input {
+  height: 60px;
+  width: 450px;
+  font-size: 22px;
+}
+
+textarea {
+  width: 450px;
+  font-size: 18px;
+}
+
+button[type=submit] {
+  position: static;
+  margin-left: 65px;
+}
+#footer-bar {
+  display: none;
+}
+
+#footer-ruler {
+  top: 750px;
+  width: 1500px;
+}
+
+#foot-social-icons img {
+  position: absolute;
+  top: 280px;
+  /* width: 23px;
+  height: 23px; */
+}
+
 }
