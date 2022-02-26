@@ -542,10 +542,12 @@ hr {
 }
 
 /* Add Transition effect to form submit button */
-.button { transition: all 0.4s ease-in-out;
- }
+.button { 
+  transition: all 0.4s ease-in-out;
+}
 
-.button:hover { transform: scale(1.5); 
+.button:hover { 
+  transform: scale(1.5); 
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
