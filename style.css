@@ -8,6 +8,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: white;
+}
+
 /* Re-engineering my design */
 .big-grid-container {
   height: 6250px;
@@ -53,12 +57,25 @@ html {
 .list_lang li {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 25;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 50px;
   color: #fff;
   list-style: none;
   text-align: center;
+}
+
+.li-first-child li {
+  position: relative;
+  top: 50px;
+  left: 45px;
+  display: flex;
+  width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 44px;
+  height: 90px;
 }
 
 #navLinks ul li {
@@ -227,7 +244,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   padding: 100px 24px;
-  background-color: #e5e5e5;
+  background-color: white;
   overflow: hidden;
 }
 
@@ -525,7 +542,7 @@ hr {
   position: absolute;
   width: 375px;
   height: 900px;
-  left: 120px;
+  left: 80px;
   top: 790px;
 }
 
@@ -533,20 +550,24 @@ hr {
   background-color: #eee;
 }
 
-.li-first-child {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 44px;
-  height: 60px;
+/* Add Transition effect to form submit button */
+.button {
+  transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.5);
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+  color: #f55800;
 }
 
 /* Create Button Interactions */
 
 /* on hover */
 .goto_project:hover,
-.get-my-resume:hover,
-.button:hover {
+.get-my-resume:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
@@ -582,7 +603,7 @@ hr {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  text-align: center;
+  text-align: left;
   color: #172b4d;
 }
 
@@ -632,7 +653,7 @@ button[type=submit] {
 
 textarea {
   color: #2c2c2c;
-  background: #f5e9e4;
+  background: #fbf8f7;
   margin-top: 20px;
   height: 150px;
   width: 327px;
@@ -684,7 +705,6 @@ textarea {
 @media (min-width: 992px) {
   body {
     width: 100%;
-    background-color: #ddd;
   }
 
   .big-grid-container {
@@ -848,22 +868,44 @@ textarea {
     left: 460px;
   }
 
+  .img_01 {
+    background-image: url(./image/img_1.png);
+  }
+
+  .img_02 {
+    background-image: url(./image/img_2.png);
+  }
+
+  .img_03 {
+    background-image: url(./image/img_3.png);
+  }
+
+  .img_01 .title-post,
+  .img_01 .supporting-text,
+  .img_01 .project-link {
+    display: none;
+  }
+
+  .img_01 .goto_project {
+    top: 363.5px;
+  }
+
   .flex-d {
+    width: 1200px;
+    left: 80px;
     display: flex;
     justify-content: space-between;
     padding: 0 30px 0 30px;
   }
 
   .flex-e {
-    width: 1200px;
-
-    /* left: 140px; */
+    width: 1300px;
     position: relative;
     top: 1700px;
     display: flex;
     justify-content: space-between;
     padding: 24px 80px 0 80px;
-    left: 130px;
+    left: 100px;
   }
 
   @media (max-width: 1200px) {
@@ -872,12 +914,7 @@ textarea {
     }
 
     .flex-e {
-      width: 1000px;
-      position: relative;
-      top: 1700px;
-      display: flex;
-      justify-content: space-between;
-      padding: 24px 80px 0 80px;
+      width: 1300px;
       left: 230px;
     }
   }
@@ -898,17 +935,33 @@ textarea {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    width: 850px;
-    left: 200px;
+    width: 800px;
+    left: 300px;
     top: 750px;
+    height: 900px;
   }
 
   .list_lang li {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 85px;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .li-first-child li {
+    top: 10px;
+    left: 0;
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .lang-img-icon {
+    position: relative;
+    right: 10px;
+    width: 30px;
+    height: 30px;
   }
 
   #about_img {
