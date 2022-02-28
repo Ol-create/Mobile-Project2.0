@@ -65,6 +65,19 @@ body {
   text-align: center;
 }
 
+.li-first-child li {
+  position: relative;
+  top: 50px;
+  left: 45px;
+  display: flex;
+  width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 44px;
+  height: 90px;
+}
+
 #navLinks ul li {
   display: none;
 }
@@ -537,26 +550,13 @@ hr {
   background-color: #eee;
 }
 
-.li-first-child li {
-  position: relative;
-  top: 50px;
-  left: 45px;
- display: flex;
-  width: 200px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 44px;
-  height: 90px;
-}
-
 /* Add Transition effect to form submit button */
-.button { 
+.button {
   transition: all 0.4s ease-in-out;
 }
 
-.button:hover { 
-  transform: scale(1.5); 
+.button:hover {
+  transform: scale(1.5);
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
@@ -867,28 +867,28 @@ textarea {
     top: 200px;
     left: 460px;
   }
- 
-.img_01 {
-  background-image: url(./image/img_1.png);
-}
 
-.img_02 {
-  background-image: url(./image/img_2.png);
-}
+  .img_01 {
+    background-image: url(./image/img_1.png);
+  }
 
-.img_03 {
-  background-image: url(./image/img_3.png);
-}
+  .img_02 {
+    background-image: url(./image/img_2.png);
+  }
 
-.img_01 .title-post,
-.img_01 .supporting-text,
-.img_01 .project-link {
-  display: none;
-}
+  .img_03 {
+    background-image: url(./image/img_3.png);
+  }
 
-.img_01 .goto_project {
-  top: 363.5px;
-}
+  .img_01 .title-post,
+  .img_01 .supporting-text,
+  .img_01 .project-link {
+    display: none;
+  }
+
+  .img_01 .goto_project {
+    top: 363.5px;
+  }
 
   .flex-d {
     width: 1200px;
@@ -951,7 +951,6 @@ textarea {
   }
 
   .li-first-child li {
-    display: absolute;
     top: 10px;
     left: 0;
     font-size: 32px;
