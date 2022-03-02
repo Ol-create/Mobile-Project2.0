@@ -42,6 +42,7 @@ body {
   position: relative;
   right: 10%;
   margin-top: 15px;
+  padding-right: 10px;
 }
 
 .bar1,
@@ -396,7 +397,7 @@ hr {
   top: 270px;
   min-width: 124px;
   height: 48px;
-  background: #ff6b00;
+  background: #c25100;
   align-items: center;
   padding: 12px;
   color: white;
@@ -496,7 +497,7 @@ hr {
   top: 150px;
   left: 10px;
   padding: 10px;
-  background: #ff6b00;
+  background: #c25100;
   color: #fff;
   text-decoration: none;
   font-size: 19px;
@@ -619,6 +620,13 @@ hr {
   justify-content: center;
 }
 
+/* Add more contrast to placeholder text */
+::placeholder {
+  color: #746d6d;
+  opacity: 1; /* firefox */
+  font-size: 16px;
+}
+
 input {
   height: 50px;
   width: 327px;
@@ -643,7 +651,7 @@ button[type=submit] {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #ff6b00;
+  background: #c25100;
   color: #fff;
   border: none;
   margin: 24px 50%;
