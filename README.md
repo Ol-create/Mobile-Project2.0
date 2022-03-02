@@ -1,9 +1,11 @@
 # Mobile Project2.0
-A mobile version of my portfolio
+## A mobile version of my portfolio
 
-##screen Shot of Portfolio Projection (Introduction Section)
+### screen Shot of Portfolio Projection (Introduction Section)
 
 ![Screen shot of portfolio project](./image/Portifolio-page1.JPG "Introduction Section").
+
+#### Link to my portfolio (https://ol-create.github.io/Portfolio/)
 
 ## Built With
 
