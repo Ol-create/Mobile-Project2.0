@@ -620,6 +620,14 @@ hr {
   justify-content: center;
 }
 
+/* Add more contrast to placeholder text */
+::placeholder {
+  color: #746D6D;
+  opacity: 1; /* firefox */
+  font-size: 16px;
+}
+
+
 input {
   height: 50px;
   width: 327px;
