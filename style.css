@@ -397,7 +397,7 @@ hr {
   top: 270px;
   min-width: 124px;
   height: 48px;
-  background: #C25100;
+  background: #c25100;
   align-items: center;
   padding: 12px;
   color: white;
@@ -497,7 +497,7 @@ hr {
   top: 150px;
   left: 10px;
   padding: 10px;
-  background: #C25100;
+  background: #c25100;
   color: #fff;
   text-decoration: none;
   font-size: 19px;
@@ -622,11 +622,10 @@ hr {
 
 /* Add more contrast to placeholder text */
 ::placeholder {
-  color: #746D6D;
+  color: #746d6d;
   opacity: 1; /* firefox */
   font-size: 16px;
 }
-
 
 input {
   height: 50px;
@@ -652,7 +651,7 @@ button[type=submit] {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #C25100;
+  background: #c25100;
   color: #fff;
   border: none;
   margin: 24px 50%;
