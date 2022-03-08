@@ -13,6 +13,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/746ba03926.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
@@ -21,12 +22,12 @@
             <nav id="navbar">
                 <p id="profileName"><a href="#"> Paul, Oluyemi</a></p>
                 <ul id="desktop-nav">
-                    <li><a id="portfolio" href="#">Portfolio</a></li>
-                    <li><a id="about" href="#">About </a></li>
-                    <li><a id="contact" href="#"> Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#contact"> Contact</a></li>
                     <li><a id="email" href="#"> <i class="far fa-envelope"></i></a></li>
                 </ul>
-                <div id="bars">
+                <div id="bars" onclick="show()">
                  <a href="#"><div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -34,7 +35,18 @@
                 </div>
             </nav>
         </header>
-
+        <div id="toggle-menu">
+            <ul>
+                <img src="./image/close-btn.svg" alt="" onclick="hide()">
+                <li><a href="#portfolio" onclick="hide()">Portfolio</a></li>
+                <hr>
+                <li><a href="#about" onclick="hide()">About</a></li>
+                <hr>
+                <li><a href="#contact" onclick="hide()">Contact</a></li>
+                <hr>
+            </ul>
+            <div></div>
+        </div>
         <main id="container" class="flex-b">
             <section class="first-page">
                 <h1 class="greetText">Hey There.<br>
@@ -60,7 +72,7 @@
         </main>
 
         <!-- Project/works Section -->
-        <div class="content-flex flex-c">
+        <div class="content-flex flex-c" id="portfolio">
             <div id="topic">
                 <h2>My Recent Works</h2>
                 <hr>
@@ -186,7 +198,7 @@
 
         <!-- About-me Section -->
 
-        <section class="about_me_grid flex-f">
+        <section class="about_me_grid flex-f"  id="about" >
 
             <div class="flex-f1">
                 <img id="about_img" width="586" height="354" src="./image/about-img-bg.png" alt="">
@@ -241,7 +253,7 @@
         </section>
 
 
-        <section class="flex-g">
+        <section class="flex-g"  id="contact">
             <div class="flex-g1">
                 <h4 id="intrest-text">I'm always interested in hearing about new projects,
                     so if you'd like to chat please get in touch.</h4>
@@ -271,6 +283,7 @@
             </div>
             <div id="footer-bar"></div>
         </section>
+        <script src="dom.js"></script>
 </body>
 
 </html>
