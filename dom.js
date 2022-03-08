@@ -1,0 +1,1 @@
+let toggleMenu = document.getElementById("toggle-menu"); 
