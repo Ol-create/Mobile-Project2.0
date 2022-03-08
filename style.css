@@ -67,21 +67,32 @@ body {
   display: none;
 }
 
+ul {
+  list-style: none;
+}
+
 #toggle-menu ul {
   width: 375px;
   height: 580px;
   padding-top: 60px;
+
   /* z-index: 2; */
-  background-color: #3C3A39;
+  background-color: #3c3a39;
 }
 
 #toggle-menu div {
   width: 180px;
-  height: 4px; 
+  height: 4px;
   border-radius: 5px;
   margin-left: 100px;
-   margin-top: 55px;
-  background-color: #3C3A39;
+  margin-top: 55px;
+  background-color: #3c3a39;
+}
+
+hr {
+  position: relative;
+  top: 20px;
+  left: 10px;
 }
 
 #toggle-menu ul hr {
@@ -91,17 +102,37 @@ body {
   margin-top: -30px;
 }
 
+.content_1 ul li a {
+  display: block;
+  color: #fff;
+  background: #777;
+}
+
+#profileName a {
+  position: relative;
+  left: 10px;
+  top: 20px;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
 #toggle-menu ul li a {
   height: 50px;
   width: 227px;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 80px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #FFF5E1;
+  color: #fff5e1;
   margin-left: 50px;
 }
 
@@ -111,7 +142,6 @@ body {
   float: right;
   margin-right: 30px;
   margin-top: -35px;
-  
 }
 
 .list_lang li {
@@ -140,26 +170,6 @@ body {
 
 #navLinks ul li {
   display: none;
-}
-
-.content_1 ul li a {
-  display: block;
-  color: #fff;
-  background: #777;
-}
-
-#profileName a {
-  position: relative;
-  left: 10px;
-  top: 20px;
-  text-decoration: none;
-  color: white;
-  margin-left: 20px;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
 }
 
 .greetText {
@@ -237,10 +247,6 @@ body {
   top: 450px;
   display: flex;
   justify-content: space-between;
-}
-
-ul {
-  list-style: none;
 }
 
 .fa {
@@ -330,12 +336,6 @@ ul {
   font-size: 25px;
   line-height: 52px;
   color: #1c1a19;
-}
-
-hr {
-  position: relative;
-  top: 20px;
-  left: 10px;
 }
 
 .project-row1 {
@@ -782,6 +782,13 @@ textarea {
     grid-template-rows: 92px 600px 830px 1400px 1400px 1250px 500px 1000px;
   }
 
+  hr {
+    position: relative;
+    top: -26px;
+    left: 310px;
+    width: 700px;
+  }
+
   /* Hide bg- */
   .first-bg-image {
     display: none;
@@ -908,13 +915,6 @@ textarea {
     font-size: 25px;
     line-height: 52px;
     color: #1c1a19;
-  }
-
-  hr {
-    position: relative;
-    top: -26px;
-    left: 310px;
-    width: 700px;
   }
 
   .img01 {
