@@ -38,7 +38,7 @@ body {
   background-color: #3c3a39;
 }
 
-#bars {
+#openMenu {
   position: relative;
   right: 10%;
   margin-top: 15px;
@@ -838,7 +838,7 @@ textarea {
     color: white;
   }
 
-  #bars {
+  #openMenu {
     display: none;
   }
 
@@ -977,7 +977,7 @@ textarea {
   }
 
   @media (max-width: 1200px) {
-    #bars {
+    #openMenu {
       display: none;
     }
 
