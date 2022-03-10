@@ -104,8 +104,6 @@
             </div>
         </div>
 
-
-
         <div class="flex-d">
 
             <div class="content_1 content-flex ">
@@ -155,7 +153,6 @@
 
         </div>
 
-
         <div class="flex-e">
             <div class="content_1 content-flex">
                 <div class="img04">
@@ -204,9 +201,7 @@
         </div>
 
         <!-- About-me Section -->
-
         <section class="about_me_grid flex-f"  id="about" >
-
             <div class="flex-f1">
                 <img id="about_img" width="586" height="354" src="./image/about-img-bg.png" alt="">
                 <h2 id="about-title">About me</h2>
@@ -266,12 +261,13 @@
             <div class="flex-g1">
                 <h4 id="intrest-text">I'm always interested in hearing about new projects,
                     so if you'd like to chat please get in touch.</h4>
-                <form action="https://formspree.io/f/mknyregg" method="post">
+                <form action="https://formspree.io/f/mknyregg" method="post" id="form">
                     <div class="flex">
                         <input type="text" class="input-text" id="name" name="client_name" maxlength="30"
                             placeholder="Full name" required>
-                        <input type="email" class="input-text" id="email" name="client_email" maxlength="30"
+                        <input type="email" class="input-text" id="email" name="email" maxlength="30"
                             placeholder="Email address" required>
+                            <p id="invalidText"></p>
                         <textarea id="msg" name="client_comment" maxlength="500" placeholder="Enter text here"
                             required></textarea>
                         <button class="button" type="submit">Get in touch</button>
