@@ -1,11 +1,11 @@
 const toggleMenu = document.getElementById('toggle-menu');
 
-function show(){ 
-    toggleMenu.style.display = 'block'; 
+function show() {
+  toggleMenu.style.display = 'block';
 }
 
 function hide() {
-    toggleMenu.style.display = 'none';
+  toggleMenu.style.display = 'none';
 }
 
 document.getElementById('openMenu').addEventListener('click', () => {
@@ -15,4 +15,3 @@ document.getElementById('openMenu').addEventListener('click', () => {
 document.getElementById('close').addEventListener('click', () => {
   hide();
 });
-
