@@ -15,3 +15,4 @@ document.getElementById('openMenu').addEventListener('click', () => {
 document.getElementById('close').addEventListener('click', () => {
   hide();
 });
+
