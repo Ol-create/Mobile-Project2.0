@@ -77,4 +77,4 @@ if (localStorage) {
   Object.keys(formObj).forEach((item) => {
     form[item].value = formObj[item];
   });
-}
+};
