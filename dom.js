@@ -46,3 +46,8 @@ form.addEventListener('change', (e) => {
     errorMessage.innerText = '';
   }
 });
+//Prevent submit default
+form.addEventListener('submit', (e) => {
+  if(!isLower(idEmail.value))
+  e.preventDefault();
+});
