@@ -17,4 +17,11 @@ document.getElementById('close').addEventListener('click', () => {
 });
 
 // This holds the form data in an object 
-const formObj = {}; 
+const formObj = {};
+// This listen input changes 
+form.addEventListener('change', (e) => { 
+// This add the data in the object 
+formObj[e.target.name] = e.target.value; 
+// This object → string 
+const dataString = JSON.stringify(formObj); 
+localStorage.setItem('formObj', dataString); });  
