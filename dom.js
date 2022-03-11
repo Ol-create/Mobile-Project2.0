@@ -36,3 +36,13 @@ const errorMessage = document.getElementById('invalidText');
 function errMsg() {
   errorMessage.innerText = 'email has to be in lower case';
 }
+
+//Check for validation
+form.addEventListener('change', (e) => {
+  const validEmail = isLower(idEmail.value);
+  if (!validEmail) {
+    errMsg(e.target.name);
+  } else {
+    errorMessage.innerText = '';
+  }
+});
