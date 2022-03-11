@@ -34,14 +34,15 @@ body {
   justify-content: space-between;
   margin-left: 0;
   height: 60px;
-  width: 375px;
+  width: 100%;
   background-color: #3c3a39;
 }
 
-#bars {
+#openMenu {
   position: relative;
   right: 10%;
   margin-top: 15px;
+  padding-right: 10px;
 }
 
 .bar1,
@@ -52,6 +53,90 @@ body {
   margin: 3px 0;
   background-color: white;
   margin-right: 20px;
+}
+
+/* Toggle menu for mobile menu */
+#toggle-menu {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  border: 1px solid #6f6c6b;
+}
+
+ul {
+  list-style: none;
+}
+
+#toggle-menu div {
+  width: 54%;
+  height: 6px;
+  background-color: #3c3a39;
+  border-radius: 6px;
+  margin-left: 19%;
+  margin-top: 50px;
+}
+
+#toggle-menu ul {
+  width: 100%;
+  height: 90vh;
+  padding-top: 60px;
+  background-color: #3c3a39;
+}
+
+hr {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+.content_1 ul li a {
+  display: block;
+  color: #fff;
+  background: #777;
+}
+
+#profileName a {
+  position: relative;
+  left: 10px;
+  top: 20px;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  z-index: 2;
+}
+
+#toggle-menu ul li a {
+  position: relative;
+  top: 20px;
+  height: 50px;
+  width: 227px;
+  text-decoration: none;
+  font-family: "Crete Round", sans-serif;
+  font-weight: 550;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0.37px;
+  text-align: left;
+  color: #fff5e1;
+  margin-left: 30px;
+}
+
+#toggle-menu img {
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: 16.5%;
+  margin-top: 35px;
 }
 
 .list_lang li {
@@ -78,28 +163,16 @@ body {
   height: 90px;
 }
 
+#toggle-menu ul li {
+  width: 75%;
+  height: 80px;
+  border-bottom: 1px solid #6f6c6b;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
 #navLinks ul li {
   display: none;
-}
-
-.content_1 ul li a {
-  display: block;
-  color: #fff;
-  background: #777;
-}
-
-#profileName a {
-  position: relative;
-  left: 10px;
-  top: 20px;
-  text-decoration: none;
-  color: white;
-  margin-left: 20px;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
 }
 
 .greetText {
@@ -108,8 +181,7 @@ body {
   left: 24px;
   top: 110px;
   font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 50px;
   line-height: 50px;
   letter-spacing: 0.37px;
@@ -177,10 +249,6 @@ body {
   top: 450px;
   display: flex;
   justify-content: space-between;
-}
-
-ul {
-  list-style: none;
 }
 
 .fa {
@@ -270,12 +338,6 @@ ul {
   font-size: 25px;
   line-height: 52px;
   color: #1c1a19;
-}
-
-hr {
-  position: relative;
-  top: 20px;
-  left: 10px;
 }
 
 .project-row1 {
@@ -396,7 +458,7 @@ hr {
   top: 270px;
   min-width: 124px;
   height: 48px;
-  background: #ff6b00;
+  background: #c25100;
   align-items: center;
   padding: 12px;
   color: white;
@@ -496,7 +558,7 @@ hr {
   top: 150px;
   left: 10px;
   padding: 10px;
-  background: #ff6b00;
+  background: #c25100;
   color: #fff;
   text-decoration: none;
   font-size: 19px;
@@ -619,6 +681,13 @@ hr {
   justify-content: center;
 }
 
+/* Add more contrast to placeholder text */
+::placeholder {
+  color: #746d6d;
+  opacity: 1; /* firefox */
+  font-size: 16px;
+}
+
 input {
   height: 50px;
   width: 327px;
@@ -643,7 +712,7 @@ button[type=submit] {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #ff6b00;
+  background: #c25100;
   color: #fff;
   border: none;
   margin: 24px 50%;
@@ -702,6 +771,10 @@ textarea {
   display: none;
 }
 
+#invalidText {
+  color: red;
+}
+
 @media (min-width: 992px) {
   body {
     width: 100%;
@@ -713,6 +786,18 @@ textarea {
     position: relative;
     grid-template-columns: 1500px;
     grid-template-rows: 92px 600px 830px 1400px 1400px 1250px 500px 1000px;
+  }
+
+  hr {
+    position: relative;
+    top: -26px;
+    left: 310px;
+    width: 700px;
+  }
+
+  /* Hide Toggle Menu */
+  #hideMe {
+    display: none;
   }
 
   /* Hide bg- */
@@ -763,7 +848,7 @@ textarea {
     color: white;
   }
 
-  #bars {
+  #openMenu {
     display: none;
   }
 
@@ -843,13 +928,6 @@ textarea {
     color: #1c1a19;
   }
 
-  hr {
-    position: relative;
-    top: -26px;
-    left: 310px;
-    width: 700px;
-  }
-
   .img01 {
     width: 684px;
     height: 448px;
@@ -909,13 +987,13 @@ textarea {
   }
 
   @media (max-width: 1200px) {
-    #bars {
+    #openMenu {
       display: none;
     }
 
-    .flex-e {
-      width: 1300px;
-      left: 230px;
+    /* Hide Toggle Menu */
+    #toggle-menu {
+      display: none;
     }
   }
 
