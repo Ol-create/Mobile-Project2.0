@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluyemi Paul Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQYJK8ZFFX"></script>
 <script>
@@ -11,10 +15,6 @@
 
   gtag('config', 'G-DQYJK8ZFFX');
 </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oluyemi Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,6 +22,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/746ba03926.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
@@ -30,19 +31,31 @@
             <nav id="navbar">
                 <p id="profileName"><a href="#"> Paul, Oluyemi</a></p>
                 <ul id="desktop-nav">
-                    <li><a id="portfolio" href="#">Portfolio</a></li>
-                    <li><a id="about" href="#">About </a></li>
-                    <li><a id="contact" href="#"> Contact</a></li>
-                    <li><a href="#"> <i class="far fa-envelope"></i></a></li>
+
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <li><a id="email" href="#"> <i class="far fa-envelope"></i></a></li>
                 </ul>
-                <div id="bars">
-                    <div class="bar1"></div>
+                <div id="openMenu" >
+                 <a href="#"><div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
+                    </a>
                 </div>
             </nav>
         </header>
-
+        <div id="hideMe">
+        <div id="toggle-menu">
+            <img src="./image/close-btn2.JPG" alt="" id="close">
+            <ul>
+                <li class="mylinks"><a href="#portfolio" >Portfolio</a></li>
+                <li class="mylinks"><a href="#about">About</a></li>
+                <li class="mylinks"><a href="#contact" >Contact</a></li>
+            </ul>
+            <div></div>
+        </div>
+    </div>
         <main id="container" class="flex-b">
             <section class="first-page">
                 <h1 class="greetText">Hey There.<br>
@@ -68,7 +81,7 @@
         </main>
 
         <!-- Project/works Section -->
-        <div class="content-flex flex-c">
+        <div class="content-flex flex-c" id="portfolio">
             <div id="topic">
                 <h2>My Recent Works</h2>
                 <hr>
@@ -92,8 +105,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <div class="flex-d">
 
@@ -144,7 +155,6 @@
 
         </div>
 
-
         <div class="flex-e">
             <div class="content_1 content-flex">
                 <div class="img04">
@@ -193,9 +203,7 @@
         </div>
 
         <!-- About-me Section -->
-
-        <section class="about_me_grid flex-f">
-
+        <section class="about_me_grid flex-f"  id="about" >
             <div class="flex-f1">
                 <img id="about_img" width="586" height="354" src="./image/about-img-bg.png" alt="">
                 <h2 id="about-title">About me</h2>
@@ -251,18 +259,18 @@
             </div>
 
         </section>
-
-        <section class="flex-g">
+        <section class="flex-g"  id="contact">
             <div class="flex-g1">
                 <h4 id="intrest-text">I'm always interested in hearing about new projects,
                     so if you'd like to chat please get in touch.</h4>
-                <form action="https://formspree.io/f/mknyregg" method="post">
+                <form action="https://formspree.io/f/mknyregg" method="post" id="form">
                     <div class="flex">
                         <input type="text" class="input-text" id="name" name="client_name" maxlength="30"
                             placeholder="Full name" required>
-                        <input type="email" class="input-text" id="email" name="client_email" maxlength="30"
+                        <input type="email" class="input-text" id="eml" name="email" maxlength="30"
                             placeholder="Email address" required>
-                        <textarea id="msg" name="client_comment" maxlength="500" placeholder="Enter text here"
+                            <p id="invalidText"></p>
+                        <textarea id="msg" name="msg" maxlength="500" placeholder="Enter text here"
                             required></textarea>
                         <button class="button" type="submit">Get in touch</button>
                     </div>
@@ -282,7 +290,8 @@
             </div>
             <div id="footer-bar"></div>
         </section>
-    </div>
+        </div>
+        <script src="dom.js"></script>
 </body>
 
 </html>
