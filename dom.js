@@ -55,6 +55,7 @@ form.addEventListener('submit', (e) => {
   if (!isLower(idEmail.value)) { e.preventDefault(); }
 });
 
+/*------- Preserve-Data-InLocalStorage ----------*/
 
 // This holds the form data in an object 
 const formObj = {};
@@ -68,5 +69,11 @@ localStorage.setItem('formObj', dataString); });
 
 //check for local Storage
 if (localStorage) {
-  const local = JSON.parse(localStorage.getItem('formData'));
-  Object.assign(formData, local);
+  const local = JSON.parse(localStorage.getItem('formObj'));
+  Object.assign(formObj, local);
+
+  // put values into form
+  Object.keys(formObj).forEach((item) => {
+    form[item].value = formObj[item];
+  });
+}
