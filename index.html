@@ -45,15 +45,17 @@
                 </div>
             </nav>
         </header>
+        <div id="hideMe">
         <div id="toggle-menu">
+            <img src="./image/close-btn2.JPG" alt="" id="close">
             <ul>
-                <img src="./image/close-btn.svg" alt="" id="close">
-                <li><a href="#portfolio" onclick="hide()">Portfolio</a></li>
-                <li><a href="#about" onclick="hide()">About</a></li>
-                <li><a href="#contact" onclick="hide()">Contact</a></li>
+                <li class="mylinks"><a href="#portfolio" >Portfolio</a></li>
+                <li class="mylinks"><a href="#about">About</a></li>
+                <li class="mylinks"><a href="#contact" >Contact</a></li>
             </ul>
             <div></div>
         </div>
+    </div>
         <main id="container" class="flex-b">
             <section class="first-page">
                 <h1 class="greetText">Hey There.<br>
@@ -265,10 +267,10 @@
                     <div class="flex">
                         <input type="text" class="input-text" id="name" name="client_name" maxlength="30"
                             placeholder="Full name" required>
-                        <input type="email" class="input-text" id="email" name="email" maxlength="30"
+                        <input type="email" class="input-text" id="eml" name="email" maxlength="30"
                             placeholder="Email address" required>
                             <p id="invalidText"></p>
-                        <textarea id="msg" name="client_comment" maxlength="500" placeholder="Enter text here"
+                        <textarea id="msg" name="msg" maxlength="500" placeholder="Enter text here"
                             required></textarea>
                         <button class="button" type="submit">Get in touch</button>
                     </div>
@@ -288,6 +290,7 @@
             </div>
             <div id="footer-bar"></div>
         </section>
+        </div>
         <script src="dom.js"></script>
 </body>
 
