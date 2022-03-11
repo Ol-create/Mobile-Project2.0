@@ -55,19 +55,20 @@ form.addEventListener('submit', (e) => {
   if (!isLower(idEmail.value)) { e.preventDefault(); }
 });
 
-/*------- Preserve-Data-InLocalStorage ----------*/
+/* ------- Preserve-Data-InLocalStorage ----------*/
 
-// This holds the form data in an object 
+// This holds the form data in an object
 const formObj = {};
-// This listen input changes 
-form.addEventListener('change', (e) => { 
-// This add the data in the object 
-formObj[e.target.name] = e.target.value; 
-// This object → string 
-const dataString = JSON.stringify(formObj); 
-localStorage.setItem('formObj', dataString); });  
+// This listen input changes
+form.addEventListener('change', (e) => {
+// This add the data in the object
+  formObj[e.target.name] = e.target.value;
+  // This object → string
+  const dataString = JSON.stringify(formObj);
+  localStorage.setItem('formObj', dataString);
+});
 
-//check for local Storage
+// check for local Storage
 if (localStorage) {
   const local = JSON.parse(localStorage.getItem('formObj'));
   Object.assign(formObj, local);
