@@ -32,6 +32,11 @@ const form = document.querySelector('#form');
 const idEmail = form.email; 
 const errorMessage = document.getElementById('invalidText'); 
 
+// Check for lowercase
+function isLower(str) {
+  return !/[A-Z]/.test(str) && /[a-z]/.test(str);
+}
+
 // Create error function
 function errMsg() {
   errorMessage.innerText = 'email has to be in lower case';
