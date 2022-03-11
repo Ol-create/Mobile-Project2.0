@@ -7,3 +7,4 @@ function show(){
 function hide() {
     toggleMenu.style.display = 'none';
 }
+
