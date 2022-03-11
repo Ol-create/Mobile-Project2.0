@@ -1,19 +1,19 @@
 const toggleMenu = document.getElementById('toggle-menu');
 
-function show() {
-  toggleMenu.style.display = 'block';
-}
-
 function hide() {
   toggleMenu.style.display = 'none';
 }
 
+document.querySelectorAll('.mylinks').forEach((n) => n.addEventListener('click', () => {
+  hide();
+}));
+
 function openNav() {
-  toggleMenu.style.width = '100%';
+  toggleMenu.style.display = 'block';
 }
 
 function closeNav() {
-  toggleMenu.style.width = '0%';
+  toggleMenu.style.display = 'none';
 }
 
 document.getElementById('openMenu').addEventListener('click', () => {

@@ -57,14 +57,15 @@ body {
 
 /* Toggle menu for mobile menu */
 #toggle-menu {
+  display: none;
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
-  width: 0;
+  width: 100%;
   height: 100vh;
   background-color: white;
-  border: 5px solid #6f6c6b;
+  border: 1px solid #6f6c6b;
 }
 
 ul {
@@ -116,14 +117,15 @@ hr {
 
 #toggle-menu ul li a {
   position: relative;
-  top: 35px;
+  top: 20px;
   height: 50px;
   width: 227px;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0;
+  font-family: "Crete Round", sans-serif;
+  font-weight: 550;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0.37px;
   text-align: left;
   color: #fff5e1;
   margin-left: 30px;
@@ -179,8 +181,7 @@ hr {
   left: 24px;
   top: 110px;
   font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 50px;
   line-height: 50px;
   letter-spacing: 0.37px;
@@ -791,7 +792,7 @@ textarea {
   }
 
   /* Hide Toggle Menu */
-  #toggle-menu {
+  #hideMe{
     display: none;
   }
 
@@ -985,12 +986,18 @@ textarea {
     #openMenu {
       display: none;
     }
+       /* Hide Toggle Menu */
+  #toggle-menu {
+    display: none;
+  }
+
+    }
 
     .flex-e {
       width: 1300px;
       left: 230px;
     }
-  }
+  
 
   .flex-f {
     height: 1400px;
