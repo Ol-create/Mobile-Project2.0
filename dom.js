@@ -65,3 +65,8 @@ formObj[e.target.name] = e.target.value;
 // This object → string 
 const dataString = JSON.stringify(formObj); 
 localStorage.setItem('formObj', dataString); });  
+
+//check for local Storage
+if (localStorage) {
+  const local = JSON.parse(localStorage.getItem('formData'));
+  Object.assign(formData, local);
