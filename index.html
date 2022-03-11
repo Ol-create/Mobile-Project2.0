@@ -37,7 +37,7 @@
                     <li><a href="#contact"> Contact</a></li>
                     <li><a id="email" href="#"> <i class="far fa-envelope"></i></a></li>
                 </ul>
-                <div id="bars" onclick="show()">
+                <div id="openMenu" >
                  <a href="#"><div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -45,15 +45,17 @@
                 </div>
             </nav>
         </header>
+        <div id="hideMe">
         <div id="toggle-menu">
+            <img src="./image/close-btn2.JPG" alt="" id="close">
             <ul>
-                <img src="./image/close-btn.svg" alt="" onclick="hide()">
-                <li><a href="#portfolio" onclick="hide()">Portfolio</a></li>
-                <li><a href="#about" onclick="hide()">About</a></li>
-                <li><a href="#contact" onclick="hide()">Contact</a></li>
+                <li class="mylinks"><a href="#portfolio" >Portfolio</a></li>
+                <li class="mylinks"><a href="#about">About</a></li>
+                <li class="mylinks"><a href="#contact" >Contact</a></li>
             </ul>
             <div></div>
         </div>
+    </div>
         <main id="container" class="flex-b">
             <section class="first-page">
                 <h1 class="greetText">Hey There.<br>
@@ -104,8 +106,6 @@
             </div>
         </div>
 
-
-
         <div class="flex-d">
 
             <div class="content_1 content-flex ">
@@ -155,7 +155,6 @@
 
         </div>
 
-
         <div class="flex-e">
             <div class="content_1 content-flex">
                 <div class="img04">
@@ -204,9 +203,7 @@
         </div>
 
         <!-- About-me Section -->
-
         <section class="about_me_grid flex-f"  id="about" >
-
             <div class="flex-f1">
                 <img id="about_img" width="586" height="354" src="./image/about-img-bg.png" alt="">
                 <h2 id="about-title">About me</h2>
@@ -266,13 +263,14 @@
             <div class="flex-g1">
                 <h4 id="intrest-text">I'm always interested in hearing about new projects,
                     so if you'd like to chat please get in touch.</h4>
-                <form action="https://formspree.io/f/mknyregg" method="post">
+                <form action="https://formspree.io/f/mknyregg" method="post" id="form">
                     <div class="flex">
                         <input type="text" class="input-text" id="name" name="client_name" maxlength="30"
                             placeholder="Full name" required>
-                        <input type="email" class="input-text" id="email" name="client_email" maxlength="30"
+                        <input type="email" class="input-text" id="eml" name="email" maxlength="30"
                             placeholder="Email address" required>
-                        <textarea id="msg" name="client_comment" maxlength="500" placeholder="Enter text here"
+                            <p id="invalidText"></p>
+                        <textarea id="msg" name="msg" maxlength="500" placeholder="Enter text here"
                             required></textarea>
                         <button class="button" type="submit">Get in touch</button>
                     </div>
@@ -292,6 +290,7 @@
             </div>
             <div id="footer-bar"></div>
         </section>
+        </div>
         <script src="dom.js"></script>
 </body>
 
