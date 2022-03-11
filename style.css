@@ -792,7 +792,7 @@ textarea {
   }
 
   /* Hide Toggle Menu */
-  #hideMe{
+  #hideMe {
     display: none;
   }
 
@@ -986,18 +986,12 @@ textarea {
     #openMenu {
       display: none;
     }
-       /* Hide Toggle Menu */
-  #toggle-menu {
-    display: none;
+
+    /* Hide Toggle Menu */
+    #toggle-menu {
+      display: none;
+    }
   }
-
-    }
-
-    .flex-e {
-      width: 1300px;
-      left: 230px;
-    }
-  
 
   .flex-f {
     height: 1400px;
