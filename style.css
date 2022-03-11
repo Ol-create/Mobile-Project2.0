@@ -771,6 +771,10 @@ textarea {
   display: none;
 }
 
+#invalidText {
+  color: red;
+}
+
 @media (min-width: 992px) {
   body {
     width: 100%;
