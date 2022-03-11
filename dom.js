@@ -31,3 +31,8 @@ document.getElementById('close').addEventListener('click', () => {
 const form = document.querySelector('#form'); 
 const idEmail = form.email; 
 const errorMessage = document.getElementById('invalidText'); 
+
+// Create error function
+function errMsg() {
+  errorMessage.innerText = 'email has to be in lower case';
+}
