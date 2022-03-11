@@ -24,13 +24,12 @@ document.getElementById('close').addEventListener('click', () => {
   closeNav();
 });
 
-
 // Form Validation
 
-//Create variable for form, email, error message. 
-const form = document.querySelector('#form'); 
-const idEmail = form.email; 
-const errorMessage = document.getElementById('invalidText'); 
+// Create variable for form, email, error message.
+const form = document.querySelector('#form');
+const idEmail = form.email;
+const errorMessage = document.getElementById('invalidText');
 
 // Check for lowercase
 function isLower(str) {
@@ -42,7 +41,7 @@ function errMsg() {
   errorMessage.innerText = 'email has to be in lower case';
 }
 
-//Check for validation
+// Check for validation
 form.addEventListener('change', (e) => {
   const validEmail = isLower(idEmail.value);
   if (!validEmail) {
@@ -51,8 +50,7 @@ form.addEventListener('change', (e) => {
     errorMessage.innerText = '';
   }
 });
-//Prevent submit default
+// Prevent submit default
 form.addEventListener('submit', (e) => {
-  if(!isLower(idEmail.value))
-  e.preventDefault();
+  if (!isLower(idEmail.value)) { e.preventDefault(); }
 });
