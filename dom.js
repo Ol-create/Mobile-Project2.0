@@ -15,3 +15,6 @@ document.getElementById('openMenu').addEventListener('click', () => {
 document.getElementById('close').addEventListener('click', () => {
   hide();
 });
+
+// This holds the form data in an object 
+const formObj = {}; 
