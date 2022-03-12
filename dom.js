@@ -104,7 +104,7 @@ function project(project) {
   divDesc.classList.add('popUpText');
   divDesc.innerHTML = project.description;
   divInfo.appendChild(divDesc);
-  
+
   const divButton = document.createElement('div');
   divButton.classList.add('divButton');
   divInfo.appendChild(divButton);
@@ -117,7 +117,6 @@ function project(project) {
   const liveIco = document.createElement('img');
   liveIco.src = project.liveImage;
   btnPreview.appendChild(liveIco);
-  // divInfo.appendChild(btnPreview);
   // Address
   const btnSrc = document.createElement('a');
   btnSrc.href = project.source;

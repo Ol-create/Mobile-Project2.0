@@ -851,7 +851,6 @@ a.popBtn.orangeBtn {
     width: 350px;
     display: flex;
     justify-content: space-between;
-
   }
 
   p.popUpText {
@@ -888,12 +887,11 @@ a.popBtn.orangeBtn {
 
 @media (min-width: 992px) {
   /* POPUP WINDOWS */
-  
+
   div.divButton {
     width: 350px;
     display: flex;
     justify-content: space-between;
-
   }
 
   p.popUpText {
