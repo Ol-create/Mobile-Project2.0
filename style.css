@@ -843,6 +843,9 @@ a.popBtn.orangeBtn {
 
 @media (max-width: 800px) {
   .divImg {
+    max-width: 400px;
+  }
+  .divImg {
     position: relative;
     bottom: 60px;
   }
@@ -897,7 +900,7 @@ a.popBtn.orangeBtn {
   p.popUpText {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-size: 130%;
+    font-size: 115%;
     line-height: 130%;
     text-align: left;
     width: 90%;
@@ -948,11 +951,14 @@ a.popBtn.orangeBtn {
   }
 
   .divImg {
-    min-width: 500px;
+    max-width: 800px;
   }
 }
 
 @media (min-width: 992px) {
+  .divImg {
+    min-width: 500px;
+  }
 
   body {
     width: 100%;
