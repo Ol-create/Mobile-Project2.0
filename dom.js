@@ -137,6 +137,22 @@ close.addEventListener('click', () => {
 document.body.appendChild(blurContainer);
 }
 
+projectList.forEach((proj) => {
+  project(proj);
+});
+
+// Show Popup Window
+
+const blurContainer = document.querySelectorAll('.popBlur');
+
+const work = document.querySelectorAll('.goto_project');
+
+for (let i = 0; i < work.length; i += 1) {
+  work[i].addEventListener('click', () => {
+    blurContainer[i].classList.add('show');
+  });
+}
+
 
 
 
