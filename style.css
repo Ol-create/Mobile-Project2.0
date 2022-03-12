@@ -844,8 +844,6 @@ a.popBtn.orangeBtn {
 @media (max-width: 800px) {
   .divImg {
     max-width: 400px;
-  }
-  .divImg {
     position: relative;
     bottom: 60px;
   }
@@ -862,6 +860,7 @@ a.popBtn.orangeBtn {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size: 16px;
+
     /* line-height: 70%; */
     text-align: left;
   }
