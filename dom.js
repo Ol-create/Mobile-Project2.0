@@ -38,7 +38,7 @@ class ProjectDiv {
     this.liveImage = liveImage;
     this.sourceTxt = srcTxt;
     this.source = src;
-    this.sourceImage= srcImage;
+    this.sourceImage = srcImage;
   }
 }
 
@@ -57,7 +57,8 @@ const projectSix = new ProjectDiv('Multi Post Stories 5', ['html', 'Bootstrap', 
 const projectSeven = new ProjectDiv('Multi Post Stories 6', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
 
 //  project array
-const projectList = [projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, projectSeven];
+const projectList = [projectOne, projectTwo, projectThree, projectFour,
+  projectFive, projectSix, projectSeven];
 
 // Dynamically Render Modal Box with Function
 function project(project) {
@@ -69,7 +70,7 @@ function project(project) {
   blurContainer.appendChild(divBox);
   // PROJECT TITLE
   const projectName = document.createElement('h3');
-  projectName.classList.add('projectName')
+  projectName.classList.add('projectName');
   projectName.innerHTML = project.name;
   divBox.appendChild(projectName);
   // LANGUAGE LIST
@@ -82,7 +83,7 @@ function project(project) {
     li.classList.add('featLang');
     languageList.appendChild(li);
   });
-  
+
   const divPrj = document.createElement('div');
   divPrj.classList.add('divInfo');
   divBox.appendChild(divPrj);
@@ -100,7 +101,7 @@ function project(project) {
   divPrj.appendChild(divInfo);
   // Page Description
   const divDesc = document.createElement('p');
-  divDesc.classList.add('popUpText')
+  divDesc.classList.add('popUpText');
   divDesc.innerHTML = project.description;
   divInfo.appendChild(divDesc);
 
@@ -113,28 +114,28 @@ function project(project) {
   liveIco.src = project.liveImage;
   btnPreview.appendChild(liveIco);
   divInfo.appendChild(btnPreview);
-// Address
-const btnSrc = document.createElement('a');
-btnSrc.href = project.source;
-btnSrc.classList.add('popBtn');
-btnSrc.classList.add('orangeBtn');
-btnSrc.innerHTML = project.sourceTxt;
-const srcIco = document.createElement('img');
-srcIco.src = project.sourceImage;
-btnSrc.appendChild(srcIco);
-divInfo.appendChild(btnSrc);
-const close = document.createElement('img');
-close.src = 'image/Close.png';
-close.classList.add('closeIco');
-divBox.appendChild(close);
+  // Address
+  const btnSrc = document.createElement('a');
+  btnSrc.href = project.source;
+  btnSrc.classList.add('popBtn');
+  btnSrc.classList.add('orangeBtn');
+  btnSrc.innerHTML = project.sourceTxt;
+  const srcIco = document.createElement('img');
+  srcIco.src = project.sourceImage;
+  btnSrc.appendChild(srcIco);
+  divInfo.appendChild(btnSrc);
+  const close = document.createElement('img');
+  close.src = 'image/Close.png';
+  close.classList.add('closeIco');
+  divBox.appendChild(close);
 
-// Close Modal
-close.addEventListener('click', () => {
-  blurContainer.classList.remove('show');
-});
+  // Close Modal
+  close.addEventListener('click', () => {
+    blurContainer.classList.remove('show');
+  });
 
-//Append Modal to body element
-document.body.appendChild(blurContainer);
+  // Append Modal to body element
+  document.body.appendChild(blurContainer);
 }
 
 projectList.forEach((proj) => {
@@ -153,10 +154,7 @@ for (let i = 0; i < work.length; i += 1) {
   });
 }
 
-
-
-
-  // Form Validation
+// Form Validation
 
 // Create variable for form, email, error message.
 const form = document.querySelector('#form');
@@ -209,4 +207,4 @@ if (localStorage) {
   Object.keys(formObj).forEach((item) => {
     form[item].value = formObj[item];
   });
-};
+}

@@ -840,7 +840,6 @@ textarea {
   align-items: center;
 }
 
- 
 @media (max-width: 700px) {
   .divImg {
     position: relative;
@@ -855,105 +854,89 @@ textarea {
     font-size: 16px;
     line-height: 155%;
     text-align: left;
-    }
-    
-    li.featLang {
-      position: relative;
-      bottom: 10px;
-      border: 1px solid #8b8a89;
-      height: 30px;
-      width: auto;
-      padding-left: 12px;
-      padding-right: 12px;
-      padding-top: 5px;
-    }
+  }
 
-    h3.projectName {
-      font-family: 'Crete Round', sans-serif;
-      font-style: normal;
-      font-size: 24px;
-      line-height: 44px;
-      line-height: 108%;
-      text-align: left;
-      vertical-align: top;
-      }
-      
-      
+  li.featLang {
+    position: relative;
+    bottom: 10px;
+    border: 1px solid #8b8a89;
+    height: 30px;
+    width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+  }
 
+  h3.projectName {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 44px;
+    line-height: 108%;
+    text-align: left;
+    vertical-align: top;
+  }
 }
-
 
 @media (min-width: 992px) {
- 
- 
- 
- /* POPUP WINDOWS */
+  /* POPUP WINDOWS */
 
-p.popUpText {
-font-family: 'Inter', sans-serif;
-font-style: regular;
-font-size: 20px;
-line-height: 30px;
-text-align: left;
-}
+  p.popUpText {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
 
-a.popBtn.orangeBtn {
-  position: relative;
-  top: 30px;
-}
+  a.popBtn.orangeBtn {
+    position: relative;
+    top: 30px;
+  }
 
-li.featLang {
-  position: relative;
-  top: 20px;
-  border: 1px solid #8b8a89;
-  height: 30px;
-  width: auto;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 5px;
-}
+  li.featLang {
+    position: relative;
+    top: 20px;
+    border: 1px solid #8b8a89;
+    height: 30px;
+    width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+  }
 
-h3.projectName {
-font-family: 'Crete Round', sans-serif;
-font-style: normal;
-font-size: 32px;
-line-height: 44px;
-line-height: 108%;
-text-align: left;
-vertical-align: top;
-}
+  h3.projectName {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 44px;
+    line-height: 108%;
+    text-align: left;
+    vertical-align: top;
+  }
 
+  .popWindow {
+    height: 90%;
+    width: 92%;
+    margin-left: 3.5vw;
+    margin-top: 5mvh;
+    overflow: inherit;
+  }
 
+  .closeIco {
+    right: 8%;
+    top: 13%;
+  }
 
-.popWindow {
-  height: 90%;
-  width: 92%;
-  margin-left: 3.5vw;
-  margin-top: 10vh;
-  height: auto;
-  overflow: inherit;
-}
+  .divInfo {
+    display: flex;
+    gap: 20px;
+  }
 
-.closeIco {
-  right: 8%;
-  top: 13%;
-}
+  .divImg {
+    min-width: 500px;
+  }
 
-.divInfo {
-  display: flex;
-  gap: 20px;
-}
-
-.divImg {
-  min-width: 500px;
-}
-
-
- 
- 
- 
- 
- 
   body {
     width: 100%;
   }
