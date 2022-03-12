@@ -24,8 +24,101 @@ document.getElementById('close').addEventListener('click', () => {
   closeNav();
 });
 
+// CREATE POPUP MODAL
 
-// Form Validation
+// Create Data Object.
+class ProjectDiv {
+  constructor(name, language, image, desc, liveTxt, liveSrc, liveImage, srcTxt, src, srcImage) {
+    this.name = name;
+    this.language = language;
+    this.image = image;
+    this.description = desc;
+    this.liveTxt = liveTxt;
+    this.liveSrc = liveSrc;
+    this.liveImage = liveImage;
+    this.sourceTxt = srcTxt;
+    this.source = src;
+    this.sourceImage= srcImage;
+  }
+}
+
+const projectOne = new ProjectDiv('Multi Post Stories', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', '#', 'image/LiveIco.png', 'See Source', 'https://github.com', 'image/SrcIco.png');
+
+const projectTwo = new ProjectDiv('Multi Post Stories', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', '#', 'image/LiveIco.png', 'See Source', 'https://github.com', 'image/SrcIco.png');
+
+const projectThree = new ProjectDiv('Multi Post Stories 2', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', '#', 'image/LiveIco.png', 'See Source', 'https://github.com', 'image/SrcIco.png');
+
+const projectFour = new ProjectDiv('Multi Post Stories 3', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', '#', 'image/LiveIco.png', 'See Source', 'https://github.com', 'image/SrcIco.png');
+
+const projectFive = new ProjectDiv('Multi Post Stories 4', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', '#', 'image/LiveIco.png', 'See Source', 'https://github.com', 'image/SrcIco.png');
+
+const projectSix = new ProjectDiv('Multi Post Stories 5', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', '#', 'image/LiveIco.png', 'See Source', 'https://github.com', 'image/SrcIco.png');
+
+const projectSeven = new ProjectDiv('Multi Post Stories 6', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', '#', 'image/LiveIco.png', 'See Source', 'https://github.com', 'image/SrcIco.png');
+
+//  project array
+const projectList = [projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, projectSeven];
+
+// Dynamically Render Modal Box with Function
+function project(project) {
+  const blurContainer = document.createElement('div');
+  blurContainer.classList.add('popBlur');
+
+  const divBox = document.createElement('div');
+  divBox.classList.add('popWindow');
+  blurContainer.appendChild(divBox);
+  // PROJECT TITLE
+  const projectName = document.createElement('h3');
+  projectName.classList.add('projectName')
+  projectName.innerHTML = project.name;
+  divBox.appendChild(projectName);
+  // LANGUAGE LIST
+  const languageList = document.createElement('ul');
+  languageList.classList.add('project-link');
+  divBox.appendChild(languageList);
+  project.language.forEach((lang) => {
+    const li = document.createElement('li');
+    li.innerHTML = lang;
+    li.classList.add('featLang');
+    languageList.appendChild(li);
+  });
+  
+  const divPrj = document.createElement('div');
+  divPrj.classList.add('divInfo');
+  divBox.appendChild(divPrj);
+  // Page Image
+  const divImg = document.createElement('div');
+  divImg.classList.add('divImg');
+  divPrj.appendChild(divImg);
+  const image = document.createElement('img');
+  image.src = project.image;
+  image.style.width = '100%';
+  divImg.appendChild(image);
+
+  const divInfo = document.createElement('div');
+  divInfo.classList.add('info');
+  divPrj.appendChild(divInfo);
+  // Page Description
+  const divDesc = document.createElement('p');
+  divDesc.classList.add('popUpText')
+  divDesc.innerHTML = project.description;
+  divInfo.appendChild(divDesc);
+
+  const btnPreview = document.createElement('a');
+  btnPreview.href = project.liveSrc;
+  btnPreview.classList.add('popBtn');
+  btnPreview.classList.add('orangeBtn');
+  btnPreview.innerHTML = project.liveTxt;
+  const liveIco = document.createElement('img');
+  liveIco.src = project.liveImage;
+  btnPreview.appendChild(liveIco);
+  divInfo.appendChild(btnPreview);
+
+
+
+
+
+  // Form Validation
 
 // Create variable for form, email, error message.
 const form = document.querySelector('#form');
