@@ -794,7 +794,7 @@ textarea {
 }
 
 .popWindow {
-  height: 90%;
+  height: 95%;
   width: 80%;
   margin-top: 5%;
   margin-left: 10%;
@@ -841,7 +841,7 @@ a.popBtn.orangeBtn {
   font-family: 'Inter', sans-serif;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .divImg {
     position: relative;
     bottom: 60px;
@@ -859,13 +859,13 @@ a.popBtn.orangeBtn {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size: 16px;
-    line-height: 155%;
+    /* line-height: 70%; */
     text-align: left;
   }
 
   li.featLang {
     position: relative;
-    bottom: 10px;
+    bottom: 40px;
     border: 1px solid #8b8a89;
     height: 30px;
     width: auto;
@@ -885,11 +885,11 @@ a.popBtn.orangeBtn {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 800px) {
   /* POPUP WINDOWS */
 
   div.divButton {
-    width: 350px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
   }
@@ -898,15 +898,15 @@ a.popBtn.orangeBtn {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size: 130%;
-    line-height: 200%;
+    line-height: 130%;
     text-align: left;
-    width: 95%;
+    width: 90%;
   }
 
   a.popBtn.orangeBtn {
-    width: 170px;
+    width: 145px;
     position: relative;
-    top: 28%;
+    top: 5%;
   }
 
   li.featLang {
@@ -950,6 +950,9 @@ a.popBtn.orangeBtn {
   .divImg {
     min-width: 500px;
   }
+}
+
+@media (min-width: 992px) {
 
   body {
     width: 100%;
