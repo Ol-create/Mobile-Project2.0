@@ -817,7 +817,7 @@ textarea {
 .closeIco {
   position: fixed;
   right: 15%;
-  top: 7%;
+  top: 5%;
 }
 
 .popBtn {
@@ -837,10 +837,21 @@ textarea {
   align-items: center;
 }
 
+a.popBtn.orangeBtn {
+  font-family: 'Inter', sans-serif;
+}
+
 @media (max-width: 700px) {
   .divImg {
     position: relative;
     bottom: 60px;
+  }
+
+  div.divButton {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+
   }
 
   p.popUpText {
@@ -877,23 +888,32 @@ textarea {
 
 @media (min-width: 992px) {
   /* POPUP WINDOWS */
+  
+  div.divButton {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+
+  }
 
   p.popUpText {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 130%;
+    line-height: 200%;
     text-align: left;
+    width: 95%;
   }
 
   a.popBtn.orangeBtn {
+    width: 170px;
     position: relative;
-    top: 30px;
+    top: 28%;
   }
 
   li.featLang {
     position: relative;
-    top: 20px;
+    bottom: 23px;
     border: 1px solid #8b8a89;
     height: 30px;
     width: auto;
@@ -906,23 +926,22 @@ textarea {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-size: 32px;
-    line-height: 44px;
     line-height: 108%;
     text-align: left;
     vertical-align: top;
   }
 
   .popWindow {
-    height: 90%;
-    width: 92%;
-    margin-left: 3.5vw;
-    margin-top: 5%;
+    height: 73%;
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 6%;
     overflow: inherit;
   }
 
   .closeIco {
-    right: 8%;
-    top: 13%;
+    right: 10%;
+    top: 16%;
   }
 
   .divInfo {

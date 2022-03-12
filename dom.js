@@ -104,8 +104,12 @@ function project(project) {
   divDesc.classList.add('popUpText');
   divDesc.innerHTML = project.description;
   divInfo.appendChild(divDesc);
-
+  
+  const divButton = document.createElement('div');
+  divButton.classList.add('divButton');
+  divInfo.appendChild(divButton);
   const btnPreview = document.createElement('a');
+  divButton.appendChild(btnPreview);
   btnPreview.href = project.liveSrc;
   btnPreview.classList.add('popBtn');
   btnPreview.classList.add('orangeBtn');
@@ -113,7 +117,7 @@ function project(project) {
   const liveIco = document.createElement('img');
   liveIco.src = project.liveImage;
   btnPreview.appendChild(liveIco);
-  divInfo.appendChild(btnPreview);
+  // divInfo.appendChild(btnPreview);
   // Address
   const btnSrc = document.createElement('a');
   btnSrc.href = project.source;
@@ -123,7 +127,7 @@ function project(project) {
   const srcIco = document.createElement('img');
   srcIco.src = project.sourceImage;
   btnSrc.appendChild(srcIco);
-  divInfo.appendChild(btnSrc);
+  divButton.appendChild(btnSrc);
   const close = document.createElement('img');
   close.src = 'image/Close.png';
   close.classList.add('closeIco');
