@@ -775,9 +775,6 @@ textarea {
   color: red;
 }
 
-
-
-
 /* ↓POPUP WINDOWS↓ */
 
 .popBlur {
@@ -799,8 +796,8 @@ textarea {
 .popWindow {
   height: 90%;
   width: 80%;
-  margin-top: 5vh;
-  margin-left: 10vw;
+  margin-top: 5%;
+  margin-left: 10%;
   background: #fff;
   box-sizing: border-box;
   padding: 16px;
