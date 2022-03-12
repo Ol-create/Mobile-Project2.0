@@ -46,6 +46,16 @@ function project(project) {
   const divBox = document.createElement('div');
   divBox.classList.add('popWindow');
   blurContainer.appendChild(divBox);
+
+  const languageList = document.createElement('ul');
+    languageList.classList.add('project-link');
+    divBox.appendChild(languageList);
+    project.language.forEach((lang) => {
+      const li = document.createElement('li');
+      li.innerHTML = lang;
+      li.classList.add('featLang');
+      languageList.appendChild(li);
+    });
 // Form Validation
 
 // Create variable for form, email, error message.
