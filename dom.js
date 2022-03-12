@@ -23,7 +23,20 @@ document.getElementById('openMenu').addEventListener('click', () => {
 document.getElementById('close').addEventListener('click', () => {
   closeNav();
 });
-
+class ProjectDiv {
+  constructor(name, language, image, desc, liveTxt, liveSrc, liveImage, srcTxt, src, srcImage) {
+    this.name = name;
+    this.language = language;
+    this.image = image;
+    this.description = desc;
+    this.liveTxt = liveTxt;
+    this.liveSrc = liveSrc;
+    this.liveImage = liveImage;
+    this.sourceTxt = srcTxt;
+    this.source = src;
+    this.sourceImage= srcImage;
+  }
+}
 // Form Validation
 
 // Create variable for form, email, error message.
