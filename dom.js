@@ -56,6 +56,22 @@ function project(project) {
       li.classList.add('featLang');
       languageList.appendChild(li);
     });
+
+    const divPrj = document.createElement('div');
+    divPrj.classList.add('divInfo');
+    divBox.appendChild(divPrj);
+    // Page Image
+    const divImg = document.createElement('div');
+    divImg.classList.add('divImg');
+    divPrj.appendChild(divImg);
+    const image = document.createElement('img');
+    image.src = project.image;
+    image.style.width = '100%';
+    divImg.appendChild(image);
+  
+    const divInfo = document.createElement('div');
+    divInfo.classList.add('info');
+    divPrj.appendChild(divInfo);  
 // Form Validation
 
 // Create variable for form, email, error message.
