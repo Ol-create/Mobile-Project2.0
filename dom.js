@@ -113,7 +113,29 @@ function project(project) {
   liveIco.src = project.liveImage;
   btnPreview.appendChild(liveIco);
   divInfo.appendChild(btnPreview);
+// Address
+const btnSrc = document.createElement('a');
+btnSrc.href = project.source;
+btnSrc.classList.add('popBtn');
+btnSrc.classList.add('orangeBtn');
+btnSrc.innerHTML = project.sourceTxt;
+const srcIco = document.createElement('img');
+srcIco.src = project.sourceImage;
+btnSrc.appendChild(srcIco);
+divInfo.appendChild(btnSrc);
+const close = document.createElement('img');
+close.src = 'image/Close.png';
+close.classList.add('closeIco');
+divBox.appendChild(close);
 
+// Close Modal
+close.addEventListener('click', () => {
+  blurContainer.classList.remove('show');
+});
+
+//Append Modal to body element
+document.body.appendChild(blurContainer);
+}
 
 
 
