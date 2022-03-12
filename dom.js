@@ -37,6 +37,15 @@ class ProjectDiv {
     this.sourceImage= srcImage;
   }
 }
+
+
+function project(project) {
+  const blurContainer = document.createElement('div');
+  blurContainer.classList.add('popBlur');
+
+  const divBox = document.createElement('div');
+  divBox.classList.add('popWindow');
+  blurContainer.appendChild(divBox);
 // Form Validation
 
 // Create variable for form, email, error message.
