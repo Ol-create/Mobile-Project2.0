@@ -775,7 +775,185 @@ textarea {
   color: red;
 }
 
+
+
+
+/* ↓POPUP WINDOWS↓ */
+
+.popBlur {
+  background: #00000025;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  display: none;
+  z-index: 2;
+}
+
+.show {
+  display: block;
+}
+
+.popWindow {
+  height: 90%;
+  width: 80%;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 16px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.closeIco {
+  position: fixed;
+  right: 15%;
+  top: 7%;
+}
+
+.popBtn {
+  text-decoration: none;
+  border: none;
+  background: #ff6b00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 12px;
+  box-sizing: border-box;
+  width: 45%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ 
+@media (max-width: 700px) {
+  .divImg {
+    position: relative;
+    bottom: 60px;
+  }
+
+  p.popUpText {
+    position: relative;
+    bottom: 25px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 155%;
+    text-align: left;
+    }
+    
+    li.featLang {
+      position: relative;
+      bottom: 10px;
+      border: 1px solid #8b8a89;
+      height: 30px;
+      width: auto;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 5px;
+    }
+
+    h3.projectName {
+      font-family: 'Crete Round', sans-serif;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 44px;
+      line-height: 108%;
+      text-align: left;
+      vertical-align: top;
+      }
+      
+      
+
+}
+
+
 @media (min-width: 992px) {
+ 
+ 
+ 
+ /* POPUP WINDOWS */
+
+p.popUpText {
+font-family: 'Inter', sans-serif;
+font-style: regular;
+font-size: 20px;
+line-height: 30px;
+text-align: left;
+}
+
+a.popBtn.orangeBtn {
+  position: relative;
+  top: 30px;
+}
+
+li.featLang {
+  position: relative;
+  top: 20px;
+  border: 1px solid #8b8a89;
+  height: 30px;
+  width: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+}
+
+h3.projectName {
+font-family: 'Crete Round', sans-serif;
+font-style: normal;
+font-size: 32px;
+line-height: 44px;
+line-height: 108%;
+text-align: left;
+vertical-align: top;
+}
+
+
+
+.popWindow {
+  height: 90%;
+  width: 92%;
+  margin-left: 3.5vw;
+  margin-top: 10vh;
+  height: auto;
+  overflow: inherit;
+}
+
+.closeIco {
+  right: 8%;
+  top: 13%;
+}
+
+.divInfo {
+  display: flex;
+  gap: 20px;
+}
+
+.divImg {
+  min-width: 500px;
+}
+
+
+ 
+ 
+ 
+ 
+ 
   body {
     width: 100%;
   }

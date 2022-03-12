@@ -24,6 +24,7 @@ document.getElementById('close').addEventListener('click', () => {
   closeNav();
 });
 
+
 // Form Validation
 
 // Create variable for form, email, error message.
