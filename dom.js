@@ -42,7 +42,7 @@ class ProjectDiv {
   }
 }
 
-const projectOne = new ProjectDiv('Multi Post Stories', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
+const projectOne = new ProjectDiv('Multi Post Stories', ['html', 'Bootstrap', 'Ruby on rails'], 'image/conferenceApp.JPG', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/The-Conference/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create/The-Conference', 'image/SrcIco.png');
 
 const projectTwo = new ProjectDiv('Multi Post Stories', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
 
@@ -94,6 +94,7 @@ function project(project) {
   const image = document.createElement('img');
   image.src = project.image;
   image.style.width = '100%';
+  image.style.height = '70%';
   divImg.appendChild(image);
 
   const divInfo = document.createElement('div');
