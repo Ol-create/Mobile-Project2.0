@@ -5,7 +5,7 @@
 
 ![Screen shot of portfolio project](./image/Portifolio-page1.JPG "Introduction Section").
 
-#### Link to my portfolio (https://ol-create.github.io/Portfolio/)
+#### Link to my portfolio (https://ol-create.github.io/Mobile-Project2.0/)
 
 ## Built With
 
