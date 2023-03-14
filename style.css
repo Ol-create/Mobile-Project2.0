@@ -94,6 +94,11 @@ hr {
   left: 10px;
 }
 
+#img-last {
+  position: relative;
+ bottom: 50px;
+}
+
 .content_1 ul li a {
   display: block;
   color: #fff;
@@ -818,6 +823,7 @@ textarea {
   position: fixed;
   right: 15%;
   top: 5%;
+  cursor: pointer
 }
 
 .popBtn {
@@ -1041,7 +1047,7 @@ a.popBtn.orangeBtn {
     position: absolute;
     width: 1003px;
     height: 769px;
-    left: 685px;
+    left: 880px;
     top: 0;
   }
 
