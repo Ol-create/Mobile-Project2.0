@@ -263,7 +263,7 @@ hr {
 /* Style background image of first page */
 
 .first-bg-image {
-  background-image: url(./image/backgroung-image-page1.svg);
+  background-image: url("https://user-images.githubusercontent.com/65777402/234018406-10c33412-b81c-49fa-8530-e280b4ca5fbc.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 406.89px;
