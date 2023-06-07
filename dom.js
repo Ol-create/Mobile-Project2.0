@@ -42,19 +42,96 @@ class ProjectDiv {
   }
 }
 
-const projectOne = new ProjectDiv('Multi Post Stories', ['html', 'Bootstrap', 'Ruby on rails'], 'image/conferenceApp.JPG', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/The-Conference/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create/The-Conference', 'image/SrcIco.png');
+const projectOne = new ProjectDiv(
+  "Developer Conferences",
+  ["html", "css", "JavaScript"],
+  "image/conferenceApp.JPG",
+  "Learn the basics of OpenTelemetry from team members and the community, including traces, metrics, and production and pipeline best practices. Join a panelof experts to learn about Dockershim deprecation and more on Kubernetes.",
+  "See Live",
+  "https://ol-create.github.io/The-Conference/",
+  "image/LiveIco.png",
+  "See Source",
+  "https://github.com/Ol-create/The-Conference",
+  "image/SrcIco.png"
+);
 
-const projectTwo = new ProjectDiv('Multi Post Stories', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
+const projectTwo = new ProjectDiv(
+  "Budget Tracker",
+  ["html", "Bootstrap", "Ruby on rails"],
+  "image/budgetAppDesktop.png",
+  "This application enables users to generate a well-organized shopping list with categories, and also provides a secure user authentication feature for sign-in and sign-out purposes. In addition, the app offers a user-friendly interface that makes it easy to add, edit, and delete items from the shopping list.",
+  "See Live",
+  "https://silent-water-2124.fly.dev/",
+  "image/LiveIco.png",
+  "See Source",
+  "https://github.com/Ol-create/MBudget_app",
+  "image/SrcIco.png"
+);
 
-const projectThree = new ProjectDiv('Multi Post Stories 2', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
+const projectThree = new ProjectDiv(
+  "Awesome Books",
+  ["html", "css", "JavaScript"],
+  "image/awesomeBookDesktop.png",
+  'The "Awesome Books" website showcases a list of books that users can add or remove. Using my expertise in JavaScript and wireframing, I developed an intuitive and user-friendly interface. The platform is optimized for a seamless experience, with straightforward controls and a minimalist design. The website emphasizes functionality.',
+  "See Live",
+  "https://awesomebooks9.netlify.app/",
+  "image/LiveIco.png",
+  "See Source",
+  "https://github.com/Ol-create/Awesome-books",
+  "image/SrcIco.png"
+);
 
-const projectFour = new ProjectDiv('Multi Post Stories 3', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
+const projectFour = new ProjectDiv(
+  "ToDo List App",
+  ["html", "css", "JavaScript"],
+  "image/todo_desktop.png",
+  "A ToDo List web-app where you can do the following: Add new list with app, you can of course delete task from the list, mark task as completed, edit task and clear completed task(s).",
+  "See Live",
+  "https://ol-create.github.io/To-Do-List/",
+  "image/LiveIco.png",
+  "See Source",
+  "https://github.com/Ol-create/To-Do-List",
+  "image/SrcIco.png"
+);
 
-const projectFive = new ProjectDiv('Multi Post Stories 4', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
+const projectFive = new ProjectDiv(
+  "Leader Board App",
+  ["html", "css", "JavaScript"],
+  "image/budgetAppDesktop.png",
+  "This JavaScript project is a leaderboard that ranks results in real-time, displaying users' exact positions based on their scores. The platform features a simple and intuitive interface, optimized for handling large volumes of data and providing a seamless user experience.",
+  "See Live",
+  "https://leadership-gcxo.onrender.com/",
+  "image/LiveIco.png",
+  "See Source",
+  "https://github.com/Ol-create/Leaderboard-app",
+  "image/SrcIco.png"
+);
 
-const projectSix = new ProjectDiv('Multi Post Stories 5', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
+const projectSix = new ProjectDiv(
+  "Portfolio App",
+  ["html", "JavaScript", "css"],
+  "image/portfolio_desktop.png",
+  "This is my portfolio project that showcases my skills in HTML, CSS, and JS. I have designed and developed it to be fully responsive, ensuring that it works seamlessly on both mobile and desktop devices. Additionally, it has been optimized for optimal performance to provide a smooth user experience.",
+  "See Live",
+  "https://ol-create.github.io/Portfolio/",
+  "image/LiveIco.png",
+  "See Source",
+  "https://github.com/Ol-create/Mobile-Project2.0",
+  "image/SrcIco.png"
+);
 
-const projectSeven = new ProjectDiv('Multi Post Stories 6', ['html', 'Bootstrap', 'Ruby on rails'], 'image/Snapshoot.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'See Live', 'https://ol-create.github.io/Portfolio/', 'image/LiveIco.png', 'See Source', 'https://github.com/Ol-create', 'image/SrcIco.png');
+const projectSeven = new ProjectDiv(
+  "Doctors Appointment App",
+  ["React", "Redux", "Ruby on Rails"],
+  "image/final_project_desktop.png",
+  "The 'Doctors Appointment' frontend is the React framework for the Doctos Appointment application, where users can register and book appointments with doctors throughout the app. This client side application is the frontend repository of this project, built with React using Redux",
+  "See Live",
+  "https://panghealth.onrender.com/",
+  "image/LiveIco.png",
+  "See Source",
+  "https://github.com/Ol-create/Doctors_Appointment_Front_End",
+  "image/SrcIco.png"
+);
 
 //  project array
 const projectList = [projectOne, projectTwo, projectThree, projectFour,

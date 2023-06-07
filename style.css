@@ -263,7 +263,6 @@ hr {
 /* Style background image of first page */
 
 .first-bg-image {
-  background-image: url("https://user-images.githubusercontent.com/65777402/234018406-10c33412-b81c-49fa-8530-e280b4ca5fbc.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 406.89px;
@@ -324,7 +323,8 @@ hr {
 .img01 {
   width: 320px;
   height: 225px;
-  background-image: url(./image/img_01.png);
+  /* background-image: url(./image/img_01.png); */
+  background-image: url("https://user-images.githubusercontent.com/65777402/234018406-10c33412-b81c-49fa-8530-e280b4ca5fbc.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 315px auto;
@@ -437,7 +437,7 @@ hr {
 
 .content_1 .project-link {
   width: 250px;
-  top: 120px;
+  top: 300px;
   left: 14px;
 }
 
@@ -452,7 +452,7 @@ hr {
 .img04 {
   height: 386px;
   min-width: 327px;
-  background-image: url(./image/img_4.png);
+  background-image: url(./image/leaderBoard.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -512,7 +512,7 @@ hr {
 .content_1 .goto_project {
   min-width: 327px;
   position: relative;
-  top: 140px;
+  top: 305px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1120,7 +1120,7 @@ a.popBtn.orangeBtn {
   .img01 {
     width: 684px;
     height: 448px;
-    background-image: url(./image/img_01.png);
+    /* background-image: url(./image/img_01.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 684px auto;
@@ -1136,15 +1136,23 @@ a.popBtn.orangeBtn {
   }
 
   .img_01 {
-    background-image: url(./image/img_1.png);
+    background-image: url(./image/bugetApp.png);
   }
 
   .img_02 {
-    background-image: url(./image/img_2.png);
+    background-image: url(./image/awesomeBook.png);
   }
 
   .img_03 {
-    background-image: url(./image/img_3.png);
+    background-image: url(./image/todoApp.webp);
+  }
+
+  .img_05 {
+    background-image: url(./image/portfolio-mobile.png);
+  }
+
+  .img_06 {
+    background-image: url(./image/final_project_mobile.png);
   }
 
   .img_01 .title-post,
