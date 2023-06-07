@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluyemi Paul Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQYJK8ZFFX"></script>
 <script>
@@ -11,10 +15,6 @@
 
   gtag('config', 'G-DQYJK8ZFFX');
 </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oluyemi Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,6 +22,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/746ba03926.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
@@ -30,19 +31,31 @@
             <nav id="navbar">
                 <p id="profileName"><a href="#"> Paul, Oluyemi</a></p>
                 <ul id="desktop-nav">
-                    <li><a id="portfolio" href="#">Portfolio</a></li>
-                    <li><a id="about" href="#">About </a></li>
-                    <li><a id="contact" href="#"> Contact</a></li>
-                    <li><a href="#"> <i class="far fa-envelope"></i></a></li>
+
+                    <li><a href="#img-last">Portfolio</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <li><a id="email" href="#contact"> <i class="fa fa-envelope"></i></a></li>
                 </ul>
-                <div id="bars">
-                    <div class="bar1"></div>
+                <div id="openMenu" >
+                 <a href="#"><div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
+                    </a>
                 </div>
             </nav>
         </header>
-
+        <div id="hideMe">
+        <div id="toggle-menu">
+            <img src="./image/Close.png" alt="close" id="close">
+            <ul>
+                <li class="mylinks"><a href="#img-last" >Portfolio</a></li>
+                <li class="mylinks"><a href="#about">About</a></li>
+                <li class="mylinks"><a href="#contact" >Contact</a></li>
+            </ul>
+            <div></div>
+        </div>
+    </div>
         <main id="container" class="flex-b">
             <section class="first-page">
                 <h1 class="greetText">Hey There.<br>
@@ -68,7 +81,8 @@
         </main>
 
         <!-- Project/works Section -->
-        <div class="content-flex flex-c">
+        <div class="content-flex flex-c" id="portfolio">
+            <div id="img-last"></div>
             <div id="topic">
                 <h2>My Recent Works</h2>
                 <hr>
@@ -76,33 +90,26 @@
             <div class="flex-row">
                 <div class="img01 flex-c1"> </div>
                 <div class="project-row1 flex-c2">
-                    <h2 id="story">Multi-Post Stories</h2>
-                    <p id="story-text">A daily selection of privately personalized
-                        reads; no accounts or sign-ups required. has
-                        been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took
-                        a standard dummy text.</p>
+                    <h2 id="story">Developer Conferences</h2>
+                    <p id="story-text">Learn the basics of OpenTelemetry from team 
+                        members and the community, including traces, metrics, and 
+                        production and pipeline best practices. Join a panel
+                         of experts to learn about Dockershim 
+                        deprecation and more on Kubernetes.</p>
                     <ul class="project-link">
-                        <li><a class="css link " href="#">css</a></li>
-                        <li><a class="html link" href="#">html</a></li>
-                        <li><a class="bootstrap link" href="#">bootstrap</a></li>
-                        <li><a class="ruby link" href="#">Ruby</a></li>
+                        <li><a class="css link " href="#">html</a></li>
+                        <li><a class="html link" href="#">css</a></li>
+                        <li><a class="ruby link" href="#">JavaScript</a></li>
                     </ul>
                     <a class="goto_project " href="#">See Project</a>
                 </div>
             </div>
         </div>
 
-
-
         <div class="flex-d">
 
             <div class="content_1 content-flex ">
                 <div class="img_01 img04">
-                    <h3 class="title-post">Profesional Art Printing Data More</h3>
-                    <p class="supporting-text">A daily selection of privately personalized
-                        reads; no accounts or sign-ups required.
-                        has been the industry's standard.</p>
                     <ul class="project-link">
                         <li><a class="html" href="#">html</a></li>
                         <li><a class="bootstrap" href="#">bootstrap</a></li>
@@ -114,14 +121,10 @@
 
             <div class="content_1 content-flex">
                 <div class="img_02 img04">
-                    <h3 class="title-post">Profesional Art Printing Data More</h3>
-                    <p class="supporting-text">A daily selection of privately personalized
-                        reads; no accounts or sign-ups required.
-                        has been the industry's standard.</p>
                     <ul class="project-link">
                         <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">bootstrap</a></li>
-                        <li><a class="ruby" href="#">Ruby</a></li>
+                        <li><a class="bootstrap" href="#">JavaScript</a></li>
+                        <li><a class="ruby" href="#">css</a></li>
                     </ul>
                     <a class="goto_project" href="#">See Project</a>
                 </div>
@@ -129,14 +132,10 @@
 
             <div class="content_1 content-flex">
                 <div class="img_03 img04">
-                    <h3 class="title-post">Profesional Art Printing Data More</h3>
-                    <p class="supporting-text">A daily selection of privately personalized
-                        reads; no accounts or sign-ups required.
-                        has been the industry's standard.</p>
                     <ul class="project-link">
                         <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">bootstrap</a></li>
-                        <li><a class="ruby" href="#">Ruby</a></li>
+                        <li><a class="bootstrap" href="#">JavaScript</a></li>
+                        <li><a class="ruby" href="#">css</a></li>
                     </ul>
                     <a class="goto_project" href="#">See Project</a>
                 </div>
@@ -144,48 +143,35 @@
 
         </div>
 
-
         <div class="flex-e">
             <div class="content_1 content-flex">
                 <div class="img04">
-                    <h3 class="title-post">Profesional Art Printing Data More</h3>
-                    <p class="supporting-text">A daily selection of privately personalized
-                        reads; no accounts or sign-ups required.
-                        has been the industry's standard.</p>
                     <ul class="project-link">
                         <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">bootstrap</a></li>
-                        <li><a class="ruby" href="#">Ruby</a></li>
+                        <li><a class="bootstrap" href="#">JavaScript</a></li>
+                        <li><a class="ruby" href="#">css</a></li>
                     </ul>
                     <a class="goto_project" href="#">See Project</a>
                 </div>
             </div>
 
             <div class="content_1 content-flex">
-                <div  class=" img_02 img04">
-                    <h3 class="title-post">Profesional Art Printing Data More</h3>
-                    <p class="supporting-text">A daily selection of privately personalized
-                        reads; no accounts or sign-ups required.
-                        has been the industry's standard.</p>
+                <div  class=" img_02 img_05 img04">
                     <ul class="project-link">
                         <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">bootstrap</a></li>
-                        <li><a class="ruby" href="#">Ruby</a></li>
+                        <li><a class="bootstrap" href="#">JavaScript</a></li>
+                        <li><a class="ruby" href="#">css</a></li>
                     </ul>
                     <a class="goto_project" href="#">See Project</a>
                 </div>
             </div>
 
             <div class="content_1 content-flex">
-                <div class=" img_03 img04">
-                    <h3 class="title-post">Profesional Art Printing Data More</h3>
-                    <p class="supporting-text">A daily selection of privately personalized
-                        reads; no accounts or sign-ups required.
-                        has been the industry's standard.</p>
+                <div class=" img_03 img_06 img04">
                     <ul class="project-link">
-                        <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">bootstrap</a></li>
-                        <li><a class="ruby" href="#">Ruby</a></li>
+                        <li><a class="html" href="#">React</a></li>
+                        <li><a class="bootstrap" href="#">Rails</a></li>
+                        <li><a class="ruby" href="#">Redux</a></li>
                     </ul>
                     <a class="goto_project" href="#">See Project</a>
                 </div>
@@ -193,9 +179,7 @@
         </div>
 
         <!-- About-me Section -->
-
-        <section class="about_me_grid flex-f">
-
+        <section class="about_me_grid flex-f"  id="about" >
             <div class="flex-f1">
                 <img id="about_img" width="586" height="354" src="./image/about-img-bg.png" alt="">
                 <h2 id="about-title">About me</h2>
@@ -251,18 +235,18 @@
             </div>
 
         </section>
-
-        <section class="flex-g">
+        <section class="flex-g"  id="contact">
             <div class="flex-g1">
                 <h4 id="intrest-text">I'm always interested in hearing about new projects,
                     so if you'd like to chat please get in touch.</h4>
-                <form action="https://formspree.io/f/mknyregg" method="post">
+                <form action="https://formspree.io/f/mknyregg" method="post" id="form">
                     <div class="flex">
                         <input type="text" class="input-text" id="name" name="client_name" maxlength="30"
                             placeholder="Full name" required>
-                        <input type="email" class="input-text" id="email" name="client_email" maxlength="30"
+                        <input type="email" class="input-text" id="eml" name="email" maxlength="30"
                             placeholder="Email address" required>
-                        <textarea id="msg" name="client_comment" maxlength="500" placeholder="Enter text here"
+                            <p id="invalidText"></p>
+                        <textarea id="msg" name="msg" maxlength="500" placeholder="Enter text here"
                             required></textarea>
                         <button class="button" type="submit">Get in touch</button>
                     </div>
@@ -282,7 +266,8 @@
             </div>
             <div id="footer-bar"></div>
         </section>
-    </div>
+        </div>
+        <script src="dom.js"></script>
 </body>
 
 </html>
