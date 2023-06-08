@@ -3,271 +3,202 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Cesar Valencia. Category: Portfolio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oluyemi Paul Portfolio</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQYJK8ZFFX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DQYJK8ZFFX');
-</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@100;200&family=Roboto:wght@100;200&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/746ba03926.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-  
+    <link rel="icon" type="image/svg+xml" href="./imgs/portafolio.png"/>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="big-grid-container">
-        <header id="flex-a" class="flex-a">
-            <nav id="navbar">
-                <p id="profileName"><a href="#"> Paul, Oluyemi</a></p>
-                <ul id="desktop-nav">
-
-                    <li><a href="#img-last">Portfolio</a></li>
-                    <li><a href="#about">About </a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                    <li><a id="email" href="#contact"> <i class="fa fa-envelope"></i></a></li>
-                </ul>
-                <div id="openMenu" >
-                 <a href="#"><div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <div id="hideMe">
-        <div id="toggle-menu">
-            <img src="./image/Close.png" alt="close" id="close">
-            <ul>
-                <li class="mylinks"><a href="#img-last" >Portfolio</a></li>
-                <li class="mylinks"><a href="#about">About</a></li>
-                <li class="mylinks"><a href="#contact" >Contact</a></li>
+    <nav class="navbar fixed-top nav-bar">
+        <a class="logo" href="#">Paul Oluyemi</a>
+            <ul class="navbardesktop">
+                <li> <a href="#projects" aria-label="Projects of my portfolio">Portfolio</a></li>
+                <li><a href="#aboutme" aria-label="About my Curriculum vitale">About</a></li>
+                <li><a href="#contact" aria-label="Form to contact">Contact</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSB" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope emailsend"></i></a></li>
             </ul>
-            <div></div>
-        </div>
-    </div>
-        <main id="container" class="flex-b">
-            <section class="first-page">
-                <h1 class="greetText">Hey There.<br>
-                    I'm Oluyemi</h1>
-                <h2 class="jobTitle">I am a Software Developer</h2>
-                <p id="description">I can help you build a product , feature or website Look through
-                    some of my work and experience! If you like what you see and
-                    have a project you need coded,
-                    don’t hestiate to contact me.</p>
-            </section>
-            <ul class="icon">
-                <li><a href="https://twitter.com/OluyemiPaul99"><i class="fa fa-twitter fa-lg"></i> </a></li>
-                <li><a href="https://www.linkedin.com/in/paul-oluyemi-193966ab"><i class="fa fa-linkedin fa-lg"></i>
-                    </a>
+            <svg id="Deploy_menu" class="menu bi bi-list" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <ul id="mobile-menu">
+                <li id="close-btn" class="close-mobile-menu "><i class="bi bi-x-lg closemenu"></i></li>
+                <li class="line_border">
+                    <a href="#projects">Portfolio</a>
                 </li>
-                <li><a href="#"><i class="fa fa-medium fa-lg"></i> </a></li>
-                <li><a href="https://github.com/Ol-create"><i class="fa fa-github fa-lg"></i> </a></li>
-                <li><a href="#"><i class="fa fa-angellist fa-lg"></i> </a></li>
+                <li class="line_border">
+                    <a href="#aboutme">About Me</a>
+                </li>
+                <li class="line_border">
+                    <a href="#contact">Contact Me</a>
+                </li>
             </ul>
-            <div class="first-bg-image">
+    </nav>
+    <section class="cover" id="cover">
+        <div class="content">
+            <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Hey there,<br>I´m Oluyemi</h1>
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h2>Software Engineer</h2>
             </div>
-            <div id="img-first"></div>
-        </main>
+            <p data-aos="fade-right">
+                Are you looking to bring your project to life? I can help you build a product, feature, or website!
+                My work and experience can be found here! You can also reach out if you have any projects that need coding.
+                Don’t hesitate to contact me.
+            </p>
+            <ul class="links1">
+                <li>
 
-        <!-- Project/works Section -->
-        <div class="content-flex flex-c" id="portfolio">
-            <div id="img-last"></div>
-            <div id="topic">
-                <h2>My Recent Works</h2>
-                <hr>
-            </div>
-            <div class="flex-row">
-                <div class="img01 flex-c1"> </div>
-                <div class="project-row1 flex-c2">
-                    <h2 id="story">Developer Conferences</h2>
-                    <p id="story-text">Learn the basics of OpenTelemetry from team 
-                        members and the community, including traces, metrics, and 
-                        production and pipeline best practices. Join a panel
-                         of experts to learn about Dockershim 
-                        deprecation and more on Kubernetes.</p>
-                    <ul class="project-link">
-                        <li><a class="css link " href="#">html</a></li>
-                        <li><a class="html link" href="#">css</a></li>
-                        <li><a class="ruby link" href="#">JavaScript</a></li>
-                    </ul>
-                    <a class="goto_project " href="#">See Project</a>
-                </div>
-            </div>
+                    <a href="https://github.com/Ol-create" target="_blank" rel="noopener noreferrer"  aria-label="enter into the github page web"><img src="./imgs/githubimg.png"
+                            alt="github"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/paul-oluyemi" target="_blank" rel="noopener noreferrer" aria-label="enter into the linkein page web"><img src="./imgs/linkeinimg.png"
+                            alt="linkedin"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/OluyemiPaul2" target="_blank" rel="noopener noreferrer" aria-label="enter into the angelist twitter page web"><img
+                            src="./imgs/twitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@oluola96" target="_blank" rel="noopener noreferrer" aria-label="enter into the angelist Medium page web"><img
+                            src="./imgs/Mediumimg.png" alt="Medium"></a>
+                </li>
+            </ul>
         </div>
-
-        <div class="flex-d">
-
-            <div class="content_1 content-flex ">
-                <div class="img_01 img04">
-                    <ul class="project-link">
-                        <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">bootstrap</a></li>
-                        <li><a class="ruby" href="#">Ruby</a></li>
-                    </ul>
-                    <a class="goto_project" href="#">See Project</a>
-                </div>
-            </div>
-
-            <div class="content_1 content-flex">
-                <div class="img_02 img04">
-                    <ul class="project-link">
-                        <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">JavaScript</a></li>
-                        <li><a class="ruby" href="#">css</a></li>
-                    </ul>
-                    <a class="goto_project" href="#">See Project</a>
-                </div>
-            </div>
-
-            <div class="content_1 content-flex">
-                <div class="img_03 img04">
-                    <ul class="project-link">
-                        <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">JavaScript</a></li>
-                        <li><a class="ruby" href="#">css</a></li>
-                    </ul>
-                    <a class="goto_project" href="#">See Project</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="flex-e">
-            <div class="content_1 content-flex">
-                <div class="img04">
-                    <ul class="project-link">
-                        <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">JavaScript</a></li>
-                        <li><a class="ruby" href="#">css</a></li>
-                    </ul>
-                    <a class="goto_project" href="#">See Project</a>
-                </div>
-            </div>
-
-            <div class="content_1 content-flex">
-                <div  class=" img_02 img_05 img04">
-                    <ul class="project-link">
-                        <li><a class="html" href="#">html</a></li>
-                        <li><a class="bootstrap" href="#">JavaScript</a></li>
-                        <li><a class="ruby" href="#">css</a></li>
-                    </ul>
-                    <a class="goto_project" href="#">See Project</a>
-                </div>
-            </div>
-
-            <div class="content_1 content-flex">
-                <div class=" img_03 img_06 img04">
-                    <ul class="project-link">
-                        <li><a class="html" href="#">React</a></li>
-                        <li><a class="bootstrap" href="#">Rails</a></li>
-                        <li><a class="ruby" href="#">Redux</a></li>
-                    </ul>
-                    <a class="goto_project" href="#">See Project</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- About-me Section -->
-        <section class="about_me_grid flex-f"  id="about" >
-            <div class="flex-f1">
-                <img id="about_img" width="586" height="354" src="./image/about-img-bg.png" alt="">
-                <h2 id="about-title">About me</h2>
-                <P id="about-text">Hello I’m a software developer! I can help you build a product ,
-                    feature or website Look through some of my work and experience!
-                    If you like what you see and have a project you need coded, don’t
-                    hestiate to contact me.</P>
-                <a class="get-my-resume" href="#">Get My Resume</a>
-
-                <hr id="about-hr">
-
-            </div>
-
-            <div class="list_lang flex-f2">
-                <div>
-                    <ul class="li-first-child">
-                        <li><span><img class="lang-img-icon" src="./image/diamond.png" alt=""></span>
-                            Language</li> 
-                        </ul>
-                        <ul>
-                    <li>Javascript</li>
-                    <li>Ruby</li>
-                    <li>Html</li>
-                    <li>Css</li>
-                </ul>
-            </div>
-                <div>
-                    <ul class="li-first-child">
-                            <li><span ><img class="lang-img-icon" src="./image/square.png" alt=""></span>
-                                Framworks</li>
-                            </ul>
-                            <ul>
-                    <li>Bootstrap</li>
-                    <li>Ruby on Rails</li>
-                    <li>RSPec</li>
-                    <li>CapyBara</li>
-                    <li>Selenium</li>
-                </ul>
-            </div>
-               <div>
-                  <ul class="li-first-child">
-                        <li id="skills"><span><img class="lang-img-icon" src="./image/circle.png" alt=""></span>
-                            Skills</li>  
-                        </ul> 
-                        <ul> 
-                    <li>Codekit</li>
-                    <li>Github</li>
-                    <li>Codepen</li>
-                    <li>Gitlab</li>
-                    <li>Terminal</li>
-                </ul>
-            </div>
-            </div>
-
-        </section>
-        <section class="flex-g"  id="contact">
-            <div class="flex-g1">
-                <h4 id="intrest-text">I'm always interested in hearing about new projects,
-                    so if you'd like to chat please get in touch.</h4>
-                <form action="https://formspree.io/f/mknyregg" method="post" id="form">
-                    <div class="flex">
-                        <input type="text" class="input-text" id="name" name="client_name" maxlength="30"
-                            placeholder="Full name" required>
-                        <input type="email" class="input-text" id="eml" name="email" maxlength="30"
-                            placeholder="Email address" required>
-                            <p id="invalidText"></p>
-                        <textarea id="msg" name="msg" maxlength="500" placeholder="Enter text here"
-                            required></textarea>
-                        <button class="button" type="submit">Get in touch</button>
+    </section>
+    <section class="proyects" id="projects">
+        <div class="tittleworksproyects">
+            <h3 class="fontstitles">My Recent Works</h3>
+            <div class="line"></div>
+            <div class="works">
+                <div  data-aos="fade-right" class="imgprincipal"></div>
+                <div class="grid">
+                    <div>
+                        <h4 class="letter">Doctors Reservations</h4>
                     </div>
-                </form>
+                    <p class="intro1">An app that allows users to schedule doctors appointments and reserve them.Also, users could add or delete doctors.
+                        A database-driven application that interacts with the front end via APIs.
+                    </p>
+                    <ul class="programs">
+                        <li class="css2">React</li>
+                        <li class="html2">Ruby on rails</li>
+                        <li class="html2">Tailwind</li>
+                    </ul>
+                    <div class="recentProject">
+                        <a class="seeProject" target="_blank" rel="noopener noreferrer" href="https://panghealth.onrender.com/">See project</a>
+                    </div>
+                </div>
             </div>
-            <hr id="footer-ruler">
-
-            <div id="foot-social-icons" class="flex">
-                <a rel="noreferrer noopener" href="https://github.com/Ol-create" target="_blank"><img
-                        src="./social_icons/github.svg" alt=""></a>
-                <a rel="noreferrer noopener" href="https://www.linkedin.com/in/paul-oluyemi-193966ab"
-                    target="_blank"><img src="./social_icons/linkedin.svg" alt=""></a>
-                <a href="#" target="_blank"><img src="./social_icons/angellist.svg" alt=""></a>
-                <a rel="noreferrer noopener" href="https://twitter.com/OluyemiPaul99" target="_blank"> <img
-                        src="./social_icons/twitter.svg" alt=""></a>
-                <a href="#" target="_blank"> <img src="./social_icons/medium.svg" alt=""></a>
-            </div>
-            <div id="footer-bar"></div>
-        </section>
         </div>
-        <script src="dom.js"></script>
-</body>
+        <div class="grid4" id="grid4">
+        </div>
+    </section>
+    <section class="aboutme" id="aboutme">
+        <div class="content">
+            <h4 data-aos="fade-down-right" class="aboutme2">About Me</h4>
+            <p data-aos="fade-down-right" class="aboutme3">
+                Hello, I am a full-stack engineer with passion for innovation and problem solving.
+                With experience in both front-end and back-end technologies,
+                I enjoy the challenge of creating seamless experiences for users by leveraging the latest tools and techniques.
+                Whether it's developing enhanced features, optimizing performance, or troubleshooting issues,
+                I am committed to delivering high-quality solutions that meet the needs of both users and stakeholders.
+            </p>
+            <br>
+            <div class="styleResume">
+                <a  data-aos="fade-down-right" target="_blank" rel="noopener noreferrer" class="btnseeproyect3" href="./docs/Paul_Oluyemi_Resume_(Software_Engineer).pdf" download>Get My Resume</a>
+            </div>
+        </div>
 
+        <div class="line2">
+        </div>
+        <div class="wrapper">
+            <ul class="grid3">
+                <li class="aboutmeskills1">Languages</li>
+                <li class="fontaboutmeskills">CSS</li>
+                <li class="fontaboutmeskills">TypeScript</li>
+                <li class="fontaboutmeskills">JavaScript</li>
+                <li class="fontaboutmeskills">Ruby</li>
+            </ul>
+            <ul class="grid3">
+                <li class="aboutmeskills2">Frameworks</li>
+                <li class="fontaboutmeskills">Bootstrap</li>
+                <li class="fontaboutmeskills">Ruby on Rails</li>
+                <li class="fontaboutmeskills">RSpec</li>
+                <li class="fontaboutmeskills">Capybara</li>
+            </ul>
+            <ul class="grid3">
+                <li class="aboutmeskills3">Skills</li>
+                <li class="fontaboutmeskills">Codekit</li>
+                <li class="fontaboutmeskills">GitHub</li>
+                <li class="fontaboutmeskills">Codepen</li>
+                <li class="fontaboutmeskills">Gitlab</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="contact" id="contact">
+        <div class="wrapper2">
+            <h5 class="secondary-header" aria-label="Form information">I'm always interested in hearing about new projects,so if you'd like to chat please get in touch.</h5>
+            <form name="contactfinalform" class="contact-form" id="contactfinalform" action="https://formspree.io/f/mknyregg" method="post">
+                <span class="error"></span>
+                <input name="name" class="name" id="name" type="text" maxlength="30" placeholder="Full Name" aria-label="name">
+                <span class="error"></span>
+                <input name="email" class="email" id="email" type="email" placeholder="Email address" aria-label="email address">
+                <span class="error"></span>
+                <textarea name="message" id="messageform" placeholder="Enter text here" rows="7" maxlength="500" aria-label="message"></textarea>
+                <div class="buttontouch">
+                    <button id="submitbtn" type="submit" class="btn">Get in touch</button>
+                </div>
+            </form>
+        </div>
+        <ul class="links2">
+            <li>
+                <a href="https://github.com/Ol-create"  target="_blank" rel="noopener noreferrer"><img src="./imgs/githubimg2.png" alt="github"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/paul-oluyemi"  target="_blank" rel="noopener noreferrer"><img src="./imgs/linkeinimg2.png" alt="linkedin"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/OluyemiPaul2"  target="_blank" rel="noopener noreferrer"><img src="./imgs/twitter2.png" alt="twitter"></a>
+            </li>
+            <li>
+                <a href="https://medium.com/@oluola96"  target="_blank" rel="noopener noreferrer"><img src="./imgs/Mediumimg2.png" alt="medium"></a>
+            </li>
+        </ul>
+    </footer>
+    <section id="popupmobile">
+        <div class="contenidoModal">
+            <div class="tittlepopup">
+                <p class="letter" id="titulo"></p>
+                <i id="closepopup" class="bi bi-x-lg closepoupbtn"></i>
+            </div>
+            <ul class="programs">
+                <li class="html2" id="tech1"></li>
+                <li class="boostrap2" id="tech2"></li>
+                <li class="boostrap2" id="tech3"></li>
+            </ul>
+            <div class="popupinfo">
+                <img class="popupimage" src="_" alt="description projects" id="imagen">
+
+                <div class="popupdesktop">
+                    <p class="textoModal" id="parrafo"></p>
+                    <div class="source">
+                        <a id="live" href="#"  target="_blank" rel="noopener noreferrer"  class="btn-link-source">See Live<img src="./imgs/IconExport.png" alt="see live project"></a>
+                        <a id="source" href="#"  target="_blank" rel="noopener noreferrer"   class="btn-link-source">See Source<img src="./imgs/IconGitHub.png" alt="see project implementation"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./Mobile.js"></script>
+    <script src="./popup.js"></script>
+    <script src="./LocalStorage.js"></script>
+    <script src="./validationform.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
 </html>
