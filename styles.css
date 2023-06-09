@@ -1634,3 +1634,8 @@ span.error {
 .email.error input {
   border-color: #ff3860;
 }
+
+.see_source {
+  display: flex;
+  justify-content: space-between;
+}
